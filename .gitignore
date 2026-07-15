@@ -48,3 +48,6 @@ $RECYCLE.BIN/
 # CHÚ Ý: KHÔNG ignore raw/ và wiki/ — đó là content chính
 # Trừ khi anh muốn raw/ chứa file rất lớn (>100MB) → dùng Git LFS
 # ============================================================
+
+.vercel
+.env*

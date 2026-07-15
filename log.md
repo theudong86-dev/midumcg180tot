@@ -54,3 +54,14 @@ HƯỚNG DẪN:
 - Đã sao chép: `raw/anh mcg180.jpg` sang `landing/anh mcg180.jpg`
 - Đã tạo: Trang Landing Page hoàn chỉnh tại [[landing/index.html]] dựa trên dữ liệu sản phẩm [[raw/mcg180.txt.txt]]
 - Ghi chú: Thiết kế giao diện Light Mode lâm sàng, tối ưu chuyển đổi, tích hợp form tương tác và đồng hồ đếm ngược cho tên miền midumcg180tot.vercel.app.
+
+## [2026-07-15] deploy & expand | Vercel Deployments & Second Brain Updates
+- **Deploy Midu MenaQ7:** Đăng nhập Vercel CLI, liên kết dự án và deploy thành công trang landing page lên **[midumcg180tot.vercel.app](https://midumcg180tot.vercel.app)**. Di chuyển các tệp `index.html` và `anh mcg180.jpg` ra thư mục gốc để hiển thị trực tiếp. Cập nhật lại giá ưu đãi các gói Combo và đồng bộ lên GitHub + Vercel Production.
+- **Tạo trang mới "Tâm số học Trò chuyện cùng con":**
+  - Sao chép & Tự động tùy biến mã nguồn từ trang reference `https://tamsohocmecon.vercel.app/` sang dự án mới độc lập tại `c:\Users\Admin\Downloads\tamsohoctrochuyencungcon`.
+  - Thiết lập Git/GitHub, tạo repo `theudong86-dev/tamsohoctrochuyencungcon` nhánh `main` và đẩy code lên.
+  - Liên kết Vercel, cấu hình Google Sheets Script Web App URL mới của chị (`AKfycbw4eDgTk...`) và deploy chạy chính thức tại **[tamsohoctrochuyencungcon.vercel.app](https://tamsohoctrochuyencungcon.vercel.app)**.
+- **Cập nhật Bộ não thứ 2 (Obsidian):**
+  - Đọc và đồng bộ dữ liệu tiểu sử đầy đủ từ tệp mới `raw/Gioi thieu ban than.txt` và ảnh chân dung `raw/anh chan dung.jpg`.
+  - Cập nhật thông tin chi tiết vào [[wiki/entities/Đồng Thêu|Đồng Thêu]] (bổ sung: kỷ niệm nuốt hạt vải tuổi thơ, 7 năm học liên thông khó khăn, 3 người con nhỏ, câu chuyện sơ cứu trẻ sốt co giật, lời khuyên tuổi 20 và đính kèm link hiển thị ảnh chân dung của chị).
+  - Cập nhật thông tin nguồn đọc [[wiki/sources/Gioi thieu ban than|Gioi thieu ban than]].

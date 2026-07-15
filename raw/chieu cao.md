@@ -1,0 +1,85 @@
+HEIGHT_EXPERT_KNOWLEDGE.md
+
+01. TRIẾT LÝ CHIỀU CAO
+
+02. WHO VÀ TỐC ĐỘ TĂNG TRƯỞNG
+
+03. SINH LÝ PHÁT TRIỂN CHIỀU CAO
+
+04. CÁC GIAI ĐOẠN VÀNG
+
+05. HORMONE TĂNG TRƯỞNG
+
+06. DINH DƯỠNG
+
+- Protein
+- Canxi
+- Vitamin D
+- Vitamin K2 MK7
+- Magie
+- Kẽm
+- DHA
+- Vitamin C
+...
+
+07. GIẤC NGỦ
+
+08. THỂ THAO
+
+09. ÁNH NẮNG
+
+10. CÁC NGUYÊN NHÂN LÀM TRẺ KHÔNG CAO
+
+11. NHỮNG HIỂU LẦM PHỔ BIẾN
+
+12. PHÂN TÍCH TỪNG ĐỘ TUỔI
+
+0-2 tuổi
+
+2-5 tuổi
+
+6-10 tuổi
+
+10-14 tuổi
+
+15-18 tuổi
+
+Nam
+
+Nữ
+
+13. CÁCH ĐỌC BIỂU ĐỒ WHO
+
+14. PHÂN TÍCH BMI
+
+15. TƯ VẤN 6 BƯỚC
+
+16. CHECKLIST KHÁCH HÀNG
+
+17. FAQ
+
+18. XỬ LÝ TỪ CHỐI
+
+19. CONTENT VIRAL
+
+20. KỊCH BẢN VIDEO
+
+21. NGHIÊN CỨU KHOA HỌC
+
+22. CÁC LINK NGHIÊN CỨU
+
+23. KIẾN THỨC VỀ D3 K2
+
+24. KIẾN THỨC VỀ MAGNESIUM
+
+25. KIẾN THỨC VỀ PROTEIN
+
+26. KIẾN THỨC VỀ GIẤC NGỦ
+
+27. KIẾN THỨC VỀ THỂ THAO
+
+28. THỰC ĐƠN MẪU
+
+29. PHÁC ĐỒ THEO ĐỘ TUỔI
+
+30. PROMPT AI CHO CHUYÊN GIA CHIỀU CAO
