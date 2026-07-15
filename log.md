@@ -65,3 +65,10 @@ HƯỚNG DẪN:
   - Đọc và đồng bộ dữ liệu tiểu sử đầy đủ từ tệp mới `raw/Gioi thieu ban than.txt` và ảnh chân dung `raw/anh chan dung.jpg`.
   - Cập nhật thông tin chi tiết vào [[wiki/entities/Đồng Thêu|Đồng Thêu]] (bổ sung: kỷ niệm nuốt hạt vải tuổi thơ, 7 năm học liên thông khó khăn, 3 người con nhỏ, câu chuyện sơ cứu trẻ sốt co giật, lời khuyên tuổi 20 và đính kèm link hiển thị ảnh chân dung của chị).
   - Cập nhật thông tin nguồn đọc [[wiki/sources/Gioi thieu ban than|Gioi thieu ban than]].
+
+## [2026-07-15] ingest | HEIGHT_EXPERT_KNOWLEDGE_BASE
+- Source: `raw/HEIGHT_EXPERT_KNOWLEDGE_BASE.md` (Khung kiến thức cơ sở tư vấn phát triển chiều cao v1.0)
+- Created source page: [[wiki/sources/HEIGHT_EXPERT_KNOWLEDGE_BASE|HEIGHT_EXPERT_KNOWLEDGE_BASE]]
+- Updated concept page: [[wiki/concepts/Chuyên gia chiều cao|Chuyên gia chiều cao]] (tích hợp triết lý tăng trưởng, sinh lý học, 4 trụ cột lối sống, quy trình tư vấn 6 bước và Prompt AI).
+- Updated: [[index.md]]
+- Notes: Thiết lập cơ sở tri thức chuẩn để cấu hình AI đóng vai Dược sĩ Đồng Thêu tư vấn chiều cao.

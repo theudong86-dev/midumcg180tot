@@ -7,6 +7,7 @@ Catalog of wiki pages. Updated on every ingest. See [[CLAUDE]] for conventions.
 ## Sources
 
 - [[wiki/sources/Gioi thieu ban than|Gioi thieu ban than]] — Tự giới thiệu bản thân, hành trình học dược và ước mơ sự nghiệp (2026-07-12, Đồng Thêu)
+- [[wiki/sources/HEIGHT_EXPERT_KNOWLEDGE_BASE|HEIGHT_EXPERT_KNOWLEDGE_BASE]] — Khung kiến thức cơ sở v1.0 về tư vấn phát triển chiều cao (2026-07-15, Đồng Thêu)
 
 ## Entities
 
