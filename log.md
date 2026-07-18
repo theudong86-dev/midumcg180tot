@@ -72,3 +72,9 @@ HƯỚNG DẪN:
 - Updated concept page: [[wiki/concepts/Chuyên gia chiều cao|Chuyên gia chiều cao]] (tích hợp triết lý tăng trưởng, sinh lý học, 4 trụ cột lối sống, quy trình tư vấn 6 bước và Prompt AI).
 - Updated: [[index.md]]
 - Notes: Thiết lập cơ sở tri thức chuẩn để cấu hình AI đóng vai Dược sĩ Đồng Thêu tư vấn chiều cao.
+
+## [2026-07-18] expand | Landing Page Midu Magie Citizen
+- **Hoàn thiện Landing Page:** Thiết kế và tối ưu trang landing page tại [index.html](file:///c:/Users/Admin/Downloads/Bo_nao_thu_2/Bo_nao_thu_2/index.html) cho sản phẩm Midu Magie Citizen dựa trên thông tin tại `raw/MAGIE citizen.txt` và ảnh `magie-citizen.jpg`.
+- **Tùy biến Visual & Interactivity:** Tối ưu hóa bảng so sánh sản phẩm, sửa lỗi hiển thị ngữ pháp tiếng Việt, tích hợp form tính toán tổng giá tự động và quà tặng cho từng Combo.
+- **Deploy lên Vercel:** Liên kết dự án mới `magie-citizen-chatluong` trên Vercel và triển khai thành công tại **[magie-citizen-chatluong.vercel.app](https://magie-citizen-chatluong.vercel.app)**.
+- **Git Sync:** Đẩy mã nguồn hoàn thiện cùng các tệp ảnh đi kèm lên GitHub repository.
