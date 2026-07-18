@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Midu MenaQ7 180mcg — Giải Pháp Bứt Phá Chiều Cao Vượt Trội Cho Con</title>
-    <meta name="description" content="Midu MenaQ7 180mcg giúp con phát triển chiều cao vượt trội từ 1-15 tuổi. Canxi hữu cơ thế hệ mới không lo táo bón, không lắng cặn sỏi thận. Nhập khẩu chính hãng Na Uy.">
-    <meta name="keywords" content="Midu MenaQ7 180mcg, tăng chiều cao, canxi hữu cơ, vitamin k2, menaq7, tăng chiều cao cho bé, canxi cho mẹ bầu">
-    <link rel="canonical" href="https://midumcg180tot.vercel.app">
+    <title>Midu Magie Citizen — Giải Pháp Vàng Cho Giấc Ngủ & Tối Ưu Chiều Cao</title>
+    <meta name="description" content="Midu Magie Citizen - Magie hữu cơ dạng nước siêu hấp thu. Giúp con ngủ ngon sâu giấc, giảm trằn trọc, hỗ trợ cố định canxi bứt phá chiều cao. Nhập khẩu chính hãng.">
+    <meta name="keywords" content="Midu Magie Citizen, magie citizen, magie huu co, magie cho be, magie chieu cao, giam truot rut, tri mat ngu">
+    <link rel="canonical" href="https://magie-citizen-chatluong.vercel.app">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,27 +17,40 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
-        /* Modern CSS Variables & Colors */
+        /* CSS Custom Properties / Design Tokens */
         :root {
-            --primary: #0284c7; /* Medical Sky Blue */
-            --primary-dark: #0369a1;
-            --primary-light: #e0f2fe;
-            --secondary: #10b981; /* Emerald Green */
-            --secondary-dark: #047857;
-            --secondary-light: #d1fae5;
-            --accent: #f59e0b; /* Amber Gold */
-            --accent-dark: #d97706;
-            --text-main: #1e293b; /* Slate 800 */
+            --primary: #4f46e5; /* Indigo */
+            --primary-dark: #3730a3;
+            --primary-light: #e0e7ff;
+            --secondary: #0d9488; /* Teal */
+            --secondary-dark: #115e59;
+            --secondary-light: #ccfbf1;
+            --midu: #e11d48; /* Midu Crimson */
+            --midu-dark: #be123c;
+            --midu-light: #ffe4e6;
+            --accent: #d97706; /* Amber */
+            --accent-light: #fef3c7;
+            --dark: #0f172a; /* Slate 900 */
+            --dark-indigo: #1e1b4b; /* Deep sleep purple-blue */
+            --text-main: #334155; /* Slate 700 */
             --text-muted: #64748b; /* Slate 500 */
-            --bg-light: #f8fafc;
+            --bg-light: #f8fafc; /* Slate 50 */
             --bg-white: #ffffff;
-            --card-shadow: 0 10px 30px -5px rgba(2, 132, 199, 0.06), 0 4px 6px -2px rgba(0, 0, 0, 0.02);
-            --card-shadow-hover: 0 20px 40px -10px rgba(2, 132, 199, 0.12), 0 8px 12px -4px rgba(0, 0, 0, 0.04);
+            
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            --shadow-premium: 0 20px 25px -5px rgba(79, 70, 229, 0.1), 0 10px 10px -5px rgba(79, 70, 229, 0.04);
+            
+            --radius-sm: 8px;
+            --radius-md: 12px;
+            --radius-lg: 20px;
+            --radius-full: 9999px;
+            
             --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            --border-radius: 16px;
         }
 
-        /* Base & Reset Styles */
+        /* Reset & Base Styles */
         * {
             box-sizing: border-box;
             margin: 0;
@@ -60,7 +73,7 @@
         h1, h2, h3, h4, .font-heading {
             font-family: 'Outfit', sans-serif;
             font-weight: 700;
-            color: #0f172a;
+            color: var(--dark);
             line-height: 1.25;
         }
 
@@ -69,1650 +82,1741 @@
             color: inherit;
         }
 
-        /* Layout Container */
+        ul {
+            list-style: none;
+        }
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 1.5rem;
-            position: relative;
         }
 
         section {
-            padding: 5rem 0;
+            padding: 5.5rem 0;
+            position: relative;
         }
 
-        /* Ambient backgrounds */
-        .bg-gradient-blue-soft {
-            background: linear-gradient(180deg, #f0f9ff 0%, #ffffff 100%);
+        /* Utility Components */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 0.85rem 2rem;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: var(--radius-full);
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+            outline: none;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
         }
 
-        .bg-gradient-green-soft {
-            background: linear-gradient(180deg, #f0fdf4 0%, #ffffff 100%);
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            box-shadow: 0 4px 14px rgba(79, 70, 229, 0.4);
         }
 
-        .bg-gradient-blue-dark {
-            background: linear-gradient(135deg, #0284c7 0%, #0369a1 50%, #0f172a 100%);
-            color: var(--bg-white);
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(79, 70, 229, 0.6);
         }
 
-        /* Header Styles */
-        header {
-            position: fixed;
+        .btn-midu {
+            background: linear-gradient(135deg, var(--midu) 0%, var(--midu-dark) 100%);
+            color: white;
+            box-shadow: 0 4px 14px rgba(225, 29, 72, 0.4);
+        }
+
+        .btn-midu:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(225, 29, 72, 0.6);
+        }
+
+        .btn-secondary {
+            background: var(--bg-white);
+            color: var(--primary);
+            border: 2px solid var(--primary-light);
+        }
+
+        .btn-secondary:hover {
+            background: var(--primary-light);
+            border-color: var(--primary);
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.35rem 1rem;
+            font-size: 0.8rem;
+            font-weight: 600;
+            border-radius: var(--radius-full);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .badge-primary {
+            background-color: var(--primary-light);
+            color: var(--primary);
+        }
+
+        .badge-secondary {
+            background-color: var(--secondary-light);
+            color: var(--secondary-dark);
+        }
+
+        .badge-midu {
+            background-color: var(--midu-light);
+            color: var(--midu);
+        }
+
+        .badge-accent {
+            background-color: var(--accent-light);
+            color: var(--accent);
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .section-header {
+            max-width: 700px;
+            margin: 0 auto 3.5rem;
+            text-align: center;
+        }
+
+        .section-header h2 {
+            font-size: 2.25rem;
+            margin-bottom: 1rem;
+            position: relative;
+        }
+
+        .section-header h2::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            margin: 0.75rem auto 0;
+            border-radius: var(--radius-full);
+        }
+
+        .section-header p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        /* Glowing background blobs */
+        .glow-blob {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.08;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .glow-1 {
+            width: 400px;
+            height: 400px;
+            background: var(--primary);
+            top: 10%;
+            left: -100px;
+        }
+
+        .glow-2 {
+            width: 500px;
+            height: 500px;
+            background: var(--secondary);
+            bottom: 20%;
+            right: -150px;
+        }
+
+        /* Top Promotion Bar */
+        .promo-bar {
+            background: linear-gradient(90deg, var(--dark-indigo) 0%, var(--primary-dark) 50%, var(--dark-indigo) 100%);
+            color: white;
+            padding: 0.6rem 0;
+            font-size: 0.9rem;
+            font-weight: 500;
+            text-align: center;
+            position: sticky;
             top: 0;
-            left: 0;
-            width: 100%;
-            background: rgba(255, 255, 255, 0.9);
+            z-index: 1001;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .promo-bar span {
+            color: #fcd34d;
+            font-weight: 700;
+        }
+
+        .timer-container {
+            display: inline-flex;
+            gap: 0.25rem;
+            font-weight: 700;
+            background: rgba(255, 255, 255, 0.15);
+            padding: 0.1rem 0.5rem;
+            border-radius: var(--radius-sm);
+            margin-left: 0.5rem;
+        }
+
+        /* Header Navigation */
+        header {
+            background-color: rgba(255, 255, 255, 0.85);
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
-            border-bottom: 1px solid rgba(2, 132, 199, 0.1);
+            border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+            position: sticky;
+            top: 36px; /* Below promo bar */
             z-index: 1000;
-            padding: 0.75rem 0;
             transition: var(--transition);
         }
 
         header.scrolled {
-            padding: 0.5rem 0;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            box-shadow: var(--shadow-md);
+            background-color: rgba(255, 255, 255, 0.95);
         }
 
-        .nav-wrapper {
+        header .container {
             display: flex;
-            justify-content: space-between;
             align-items: center;
+            justify-content: space-between;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
         }
 
         .logo {
-            font-family: 'Outfit', sans-serif;
-            font-size: 1.35rem;
-            font-weight: 800;
-            color: var(--primary-dark);
             display: flex;
             align-items: center;
             gap: 0.5rem;
         }
 
-        .logo span {
-            color: var(--secondary);
+        .logo-text {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--midu) 0%, var(--primary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
-        .nav-links {
+        .logo-subtitle {
+            font-size: 0.7rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            display: block;
+        }
+
+        nav {
             display: flex;
-            list-style: none;
-            gap: 1.75rem;
             align-items: center;
+            gap: 2rem;
         }
 
-        .nav-links a {
+        nav a {
             font-size: 0.95rem;
             font-weight: 600;
             color: var(--text-main);
             transition: var(--transition);
             position: relative;
-            padding: 0.25rem 0;
         }
 
-        .nav-links a::after {
+        nav a::after {
             content: '';
             position: absolute;
-            bottom: 0;
+            bottom: -4px;
             left: 0;
             width: 0;
             height: 2px;
-            background: var(--primary);
+            background-color: var(--primary);
             transition: var(--transition);
         }
 
-        .nav-links a:hover {
+        nav a:hover {
             color: var(--primary);
         }
 
-        .nav-links a:hover::after {
+        nav a:hover::after {
             width: 100%;
         }
 
-        .nav-btn {
-            background: var(--primary);
-            color: white !important;
-            padding: 0.6rem 1.25rem;
-            border-radius: 50px;
-            font-weight: 700 !important;
-            font-size: 0.9rem !important;
-            box-shadow: 0 4px 12px rgba(2, 132, 199, 0.2);
-            transition: var(--transition);
-        }
-
-        .nav-btn:hover {
-            background: var(--primary-dark);
-            transform: translateY(-1px);
-            box-shadow: 0 6px 16px rgba(2, 132, 199, 0.3);
-        }
-
-        .mobile-menu-btn {
+        .menu-toggle {
             display: none;
-            background: none;
-            border: none;
             font-size: 1.5rem;
-            color: var(--primary-dark);
+            color: var(--dark);
             cursor: pointer;
         }
 
         /* Hero Section */
-        #hero {
-            padding-top: 8rem;
-            padding-bottom: 4rem;
+        .hero {
+            background: radial-gradient(circle at top right, rgba(79, 70, 229, 0.05), transparent 60%),
+                        radial-gradient(circle at bottom left, rgba(13, 148, 136, 0.05), transparent 60%);
+            padding-top: 6rem;
+            padding-bottom: 5.5rem;
             overflow: hidden;
         }
 
         .hero-grid {
             display: grid;
             grid-template-columns: 1.1fr 0.9fr;
-            gap: 3rem;
+            gap: 4rem;
             align-items: center;
         }
 
-        .hero-tag {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            background: var(--primary-light);
-            color: var(--primary-dark);
-            padding: 0.4rem 1rem;
-            border-radius: 50px;
-            font-size: 0.85rem;
-            font-weight: 700;
-            margin-bottom: 1.25rem;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            border: 1px solid rgba(2, 132, 199, 0.15);
-        }
-
-        .hero-title {
-            font-size: 2.75rem;
-            font-weight: 800;
+        .hero-content h1 {
+            font-size: 3rem;
             line-height: 1.15;
-            margin-bottom: 1.25rem;
-            color: #0f172a;
-        }
-
-        .hero-title span.text-gradient {
-            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            margin-top: 1rem;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, var(--dark) 30%, var(--primary-dark) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
-        .hero-desc {
-            font-size: 1.05rem;
-            color: var(--text-muted);
+        .hero-content p {
+            font-size: 1.125rem;
+            color: var(--text-main);
             margin-bottom: 2rem;
             line-height: 1.7;
         }
 
-        .hero-desc strong {
-            color: var(--text-main);
+        .hero-content strong {
+            color: var(--primary-dark);
+            font-weight: 700;
         }
 
-        .hero-bullets {
-            list-style: none;
+        .hero-benefits {
             margin-bottom: 2.5rem;
             display: grid;
-            grid-template-columns: 1fr;
-            gap: 0.75rem;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
         }
 
-        .hero-bullets li {
+        .hero-benefit-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-weight: 600;
+            color: var(--dark);
+        }
+
+        .hero-benefit-item i {
+            color: var(--secondary);
+            font-size: 1.2rem;
+            background: var(--secondary-light);
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-cta {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .hero-trust-badge {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .hero-trust-badge i {
+            color: #fbbf24;
+            font-size: 1.1rem;
+        }
+
+        .hero-image-wrapper {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-image-bg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, var(--primary-light) 0%, transparent 70%);
+            transform: scale(1.2);
+            z-index: 0;
+            opacity: 0.6;
+        }
+
+        .hero-image-card {
+            background-color: var(--bg-white);
+            border-radius: var(--radius-lg);
+            padding: 1.5rem;
+            box-shadow: var(--shadow-premium);
+            z-index: 1;
+            position: relative;
+            transition: var(--transition);
+            border: 1px solid rgba(79, 70, 229, 0.08);
+            max-width: 440px;
+        }
+
+        .hero-image-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .hero-image-card img {
+            width: 100%;
+            height: auto;
+            border-radius: var(--radius-md);
+            display: block;
+        }
+
+        .hero-floating-badge {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+            border-radius: var(--radius-md);
+            padding: 0.75rem 1rem;
+            box-shadow: var(--shadow-lg);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            z-index: 2;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .badge-float-1 {
+            top: 20px;
+            left: -40px;
+            animation-delay: 0s;
+        }
+
+        .badge-float-2 {
+            bottom: 40px;
+            right: -30px;
+            animation-delay: 3s;
+        }
+
+        .hero-floating-badge i {
+            font-size: 1.5rem;
+            color: var(--midu);
+        }
+
+        .hero-floating-badge .n {
+            font-weight: 800;
+            color: var(--dark);
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.1rem;
+            line-height: 1;
+        }
+
+        .hero-floating-badge .lbl {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        /* Problem Section */
+        .problem {
+            background-color: var(--bg-white);
+        }
+
+        .problem-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .problem-illustration {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.25rem;
+        }
+
+        .problem-card {
+            background: var(--bg-light);
+            border-radius: var(--radius-md);
+            padding: 1.5rem;
+            border: 1px solid rgba(226, 232, 240, 0.6);
+            transition: var(--transition);
+        }
+
+        .problem-card:hover {
+            background-color: #fff1f2;
+            border-color: #fecdd3;
+            transform: translateY(-3px);
+        }
+
+        .problem-card i {
+            font-size: 1.75rem;
+            color: var(--midu);
+            margin-bottom: 1rem;
+            background: var(--midu-light);
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .problem-card h4 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            color: var(--dark);
+        }
+
+        .problem-card p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+
+        .problem-content h3 {
+            font-size: 2rem;
+            margin-bottom: 1.25rem;
+            color: var(--dark);
+        }
+
+        .problem-content p {
+            font-size: 1.05rem;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+
+        .problem-callout {
+            background: linear-gradient(135deg, var(--dark-indigo) 0%, #1e1b4b 100%);
+            color: white;
+            padding: 1.75rem;
+            border-radius: var(--radius-md);
+            border-left: 5px solid var(--accent);
+            margin-top: 2rem;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .problem-callout h4 {
+            color: #fcd34d;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .problem-callout p {
+            margin-bottom: 0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            opacity: 0.9;
+        }
+
+        /* Science & Solution Section */
+        .science {
+            background-color: var(--bg-light);
+        }
+
+        .science-cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2.5rem;
+            margin-top: 3.5rem;
+        }
+
+        .science-card {
+            background-color: var(--bg-white);
+            border-radius: var(--radius-lg);
+            padding: 2.5rem;
+            box-shadow: var(--shadow-lg);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .science-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-premium);
+        }
+
+        .science-card-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .science-card-icon {
+            font-size: 2rem;
+            color: var(--primary);
+            background-color: var(--primary-light);
+            width: 60px;
+            height: 60px;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .science-card-header h3 {
+            font-size: 1.4rem;
+            color: var(--dark);
+        }
+
+        .science-card p {
+            font-size: 1rem;
+            line-height: 1.65;
+            color: var(--text-main);
+            margin-bottom: 1.5rem;
+        }
+
+        .science-features {
+            background-color: var(--bg-light);
+            border-radius: var(--radius-md);
+            padding: 1.25rem;
+            list-style: none;
+        }
+
+        .science-features li {
+            position: relative;
+            padding-left: 2rem;
+            margin-bottom: 0.75rem;
+            font-size: 0.925rem;
+            font-weight: 500;
+        }
+
+        .science-features li:last-child {
+            margin-bottom: 0;
+        }
+
+        .science-features li::before {
+            content: "\f058";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            top: 1px;
+            color: var(--secondary);
+            font-size: 1.1rem;
+        }
+
+        /* Comparison Section (USP) */
+        .comparison {
+            background-color: var(--bg-white);
+        }
+
+        .comparison-table-wrapper {
+            background: var(--bg-white);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-lg);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+            overflow: hidden;
+            margin-top: 3rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 1.5rem;
+            border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+        }
+
+        th {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: var(--dark);
+            background-color: var(--bg-light);
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .col-criterion {
+            width: 25%;
+            font-weight: 600;
+            color: var(--dark);
+        }
+
+        .col-magie-citizen {
+            width: 40%;
+            background-color: rgba(79, 70, 229, 0.03);
+            border-left: 2px solid rgba(79, 70, 229, 0.15);
+            border-right: 2px solid rgba(79, 70, 229, 0.15);
+        }
+
+        th.col-magie-citizen {
+            background-color: var(--primary-light);
+            color: var(--primary-dark);
+            text-align: center;
+        }
+
+        .col-ordinary-magie {
+            width: 35%;
+            color: var(--text-muted);
+        }
+
+        .table-cell-check {
             display: flex;
             align-items: flex-start;
             gap: 0.75rem;
             font-weight: 500;
+            color: var(--dark);
+        }
+
+        .table-cell-check i {
+            color: var(--secondary);
+            font-size: 1.25rem;
+            margin-top: 0.1rem;
+        }
+
+        .table-cell-cross {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
             font-size: 0.95rem;
         }
 
-        .hero-bullets i {
-            color: var(--secondary);
-            font-size: 1.1rem;
-            margin-top: 0.2rem;
+        .table-cell-cross i {
+            color: var(--midu);
+            font-size: 1.2rem;
+            margin-top: 0.1rem;
         }
 
-        .hero-ctas {
-            display: flex;
-            gap: 1rem;
-            flex-wrap: wrap;
+        /* Pharmacist Profile Section (Trust Builder) */
+        .profile {
+            background: linear-gradient(180deg, var(--bg-light) 0%, rgba(79, 70, 229, 0.03) 100%);
         }
 
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 0.75rem;
-            padding: 0.9rem 2rem;
-            border-radius: 50px;
-            font-weight: 700;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: var(--transition);
-            border: none;
-            text-align: center;
-        }
-
-        .btn-accent {
-            background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
-            color: white;
-            box-shadow: 0 8px 24px rgba(217, 119, 6, 0.25);
-            animation: pulse-amber 2.5s infinite;
-        }
-
-        .btn-accent:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 12px 30px rgba(217, 119, 6, 0.35);
-        }
-
-        .btn-outline {
-            background: transparent;
-            border: 2px solid var(--primary);
-            color: var(--primary);
-        }
-
-        .btn-outline:hover {
-            background: var(--primary-light);
-            color: var(--primary-dark);
-            transform: translateY(-2px);
-        }
-
-        /* Hero Image with glowing glassmorphism effects */
-        .hero-img-container {
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .hero-img-wrapper {
-            position: relative;
-            width: 85%;
-            aspect-ratio: 1;
-            border-radius: 30px;
-            background: rgba(255, 255, 255, 0.7);
-            border: 1px solid rgba(255, 255, 255, 0.5);
-            backdrop-filter: blur(8px);
-            box-shadow: 0 30px 60px -15px rgba(2, 132, 199, 0.12);
-            padding: 1.5rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: var(--transition);
-        }
-
-        .hero-img-wrapper:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 40px 80px -20px rgba(2, 132, 199, 0.2);
-        }
-
-        .hero-img {
-            max-width: 100%;
-            max-height: 100%;
-            object-fit: contain;
-            border-radius: 18px;
-            filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.1));
-        }
-
-        .hero-glow-blob {
-            position: absolute;
-            width: 70%;
-            height: 70%;
-            border-radius: 50%;
-            background: radial-gradient(circle, rgba(2, 132, 199, 0.2) 0%, rgba(16, 185, 129, 0.05) 70%, transparent 100%);
-            z-index: -1;
-            filter: blur(30px);
-        }
-
-        .floating-badge {
-            position: absolute;
-            background: white;
-            padding: 0.6rem 1.2rem;
-            border-radius: 12px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            font-weight: 700;
-            font-size: 0.85rem;
-            z-index: 2;
-            border: 1px solid rgba(2, 132, 199, 0.1);
-        }
-
-        .badge-1 {
-            top: 10%;
-            left: -5%;
-            animation: float 4s ease-in-out infinite;
-        }
-
-        .badge-2 {
-            bottom: 15%;
-            right: -5%;
-            animation: float-delayed 4s ease-in-out infinite;
-        }
-
-        .badge-1 i { color: var(--accent); }
-        .badge-2 i { color: var(--secondary); }
-
-        /* Trust Stats Bar */
-        .trust-bar {
-            background: white;
-            border-top: 1px solid rgba(2, 132, 199, 0.08);
-            border-bottom: 1px solid rgba(2, 132, 199, 0.08);
-            padding: 2rem 0;
-            box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.01);
-        }
-
-        .trust-grid {
+        .profile-grid {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 2rem;
+            grid-template-columns: 0.8fr 1.2fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .profile-image-card {
+            background-color: var(--bg-white);
+            border-radius: var(--radius-lg);
+            padding: 1rem;
+            box-shadow: var(--shadow-lg);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+            position: relative;
+        }
+
+        .profile-image-card img {
+            width: 100%;
+            height: auto;
+            border-radius: var(--radius-md);
+            display: block;
+            object-fit: cover;
+        }
+
+        .profile-image-tag {
+            position: absolute;
+            bottom: 2rem;
+            left: 2rem;
+            right: 2rem;
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(6px);
+            color: white;
+            padding: 0.75rem 1.25rem;
+            border-radius: var(--radius-md);
             text-align: center;
         }
 
-        .stat-item h3 {
-            font-size: 2.25rem;
-            color: var(--primary-dark);
-            margin-bottom: 0.25rem;
-        }
+        .profile-image-tag h4 {
+            color: white;
+            font-size: 1.15rem;
+            margin-bottom: 0.15rem;
+            }
 
-        .stat-item p {
-            font-size: 0.85rem;
-            font-weight: 600;
-            color: var(--text-muted);
+        .profile-image-tag p {
+            font-size: 0.8rem;
+            opacity: 0.85;
+            font-weight: 500;
             text-transform: uppercase;
             letter-spacing: 0.05em;
+            margin-bottom: 0;
         }
 
-        /* Problem Section (Calcium Paradox) */
-        .section-header {
-            text-align: center;
-            max-width: 700px;
-            margin: 0 auto 3.5rem;
-        }
-
-        .section-subtitle {
-            color: var(--primary);
-            text-transform: uppercase;
-            font-weight: 700;
-            font-size: 0.85rem;
-            letter-spacing: 0.1em;
-            margin-bottom: 0.5rem;
-            display: inline-block;
-        }
-
-        .section-title {
+        .profile-content h3 {
             font-size: 2.25rem;
-            font-weight: 800;
-            margin-bottom: 1rem;
+            margin-bottom: 0.5rem;
+            color: var(--dark);
         }
 
-        .section-desc {
-            color: var(--text-muted);
-            font-size: 1.05rem;
+        .profile-content .subtitle {
+            font-size: 1.1rem;
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: 1.5rem;
         }
 
-        .paradox-grid {
+        .profile-story {
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        .profile-story p {
+            margin-bottom: 1.25rem;
+        }
+
+        .profile-quote {
+            background: var(--bg-white);
+            border-left: 4px solid var(--primary);
+            padding: 1.25rem 1.75rem;
+            border-radius: 0 var(--radius-md) var(--radius-md) 0;
+            font-style: italic;
+            font-weight: 500;
+            color: var(--dark-indigo);
+            box-shadow: var(--shadow-sm);
+            margin: 1.5rem 0;
+        }
+
+        /* Ingredients & Specs Section */
+        .specs {
+            background-color: var(--bg-white);
+        }
+
+        .specs-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
-            margin-top: 2rem;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 4rem;
+            align-items: center;
         }
 
-        .paradox-card {
-            background: white;
-            border-radius: var(--border-radius);
-            padding: 2.25rem 2rem;
-            border: 1px solid rgba(2, 132, 199, 0.05);
-            box-shadow: var(--card-shadow);
-            transition: var(--transition);
-            position: relative;
-            overflow: hidden;
+        .ingredients-list {
             display: flex;
             flex-direction: column;
+            gap: 1.25rem;
         }
 
-        .paradox-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 4px;
-            height: 100%;
+        .ingredient-card {
+            background-color: var(--bg-light);
+            border-radius: var(--radius-md);
+            padding: 1.5rem;
+            border: 1px solid rgba(226, 232, 240, 0.8);
+            display: flex;
+            gap: 1.25rem;
+            transition: var(--transition);
         }
 
-        .card-danger::before { background-color: #ef4444; }
-        .card-warning::before { background-color: #f59e0b; }
-        .card-success::before { background-color: #10b981; }
-
-        .card-danger {
-            border-color: rgba(239, 68, 68, 0.1);
-        }
-        .card-warning {
-            border-color: rgba(245, 158, 11, 0.1);
-        }
-        .card-success {
-            border-color: rgba(16, 185, 129, 0.1);
-            background: linear-gradient(180deg, #ffffff 0%, #f0fdf4 100%);
+        .ingredient-card:hover {
+            transform: translateX(5px);
+            background-color: var(--primary-light);
+            border-color: rgba(79, 70, 229, 0.2);
         }
 
-        .paradox-icon {
+        .ingredient-icon {
+            font-size: 1.75rem;
+            color: var(--primary-dark);
+            background: var(--bg-white);
             width: 50px;
             height: 50px;
             border-radius: 12px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.35rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .card-danger .paradox-icon { background: rgba(239, 68, 68, 0.1); color: #ef4444; }
-        .card-warning .paradox-icon { background: rgba(245, 158, 11, 0.1); color: #f59e0b; }
-        .card-success .paradox-icon { background: rgba(16, 185, 129, 0.1); color: #10b981; }
-
-        .paradox-card h4 {
-            font-size: 1.25rem;
-            margin-bottom: 1rem;
-        }
-
-        .paradox-card p {
-            font-size: 0.95rem;
-            color: var(--text-muted);
-            flex-grow: 1;
-            line-height: 1.6;
-        }
-
-        .paradox-card strong {
-            color: #0f172a;
-        }
-
-        /* Product Solution Info Block */
-        .solution-block {
-            margin-top: 5rem;
-            background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
-            border-radius: 24px;
-            padding: 3.5rem;
-            color: white;
-            box-shadow: 0 20px 50px rgba(2, 132, 199, 0.25);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .solution-block-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-            align-items: center;
-            position: relative;
-            z-index: 2;
-        }
-
-        .solution-title {
-            color: white;
-            font-size: 2.25rem;
-            margin-bottom: 1rem;
-        }
-
-        .solution-desc {
-            font-size: 1.05rem;
-            opacity: 0.9;
-            margin-bottom: 1.5rem;
-        }
-
-        .solution-features {
-            list-style: none;
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 1rem;
-        }
-
-        .solution-features li {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            font-weight: 600;
-        }
-
-        .solution-features i {
-            color: var(--accent);
-            font-size: 1.2rem;
-        }
-
-        .solution-img-wrapper {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            border-radius: var(--border-radius);
-            padding: 2rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
-        }
-
-        .solution-img {
-            max-width: 90%;
-            height: auto;
-            border-radius: 12px;
-            filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.2));
-        }
-
-        /* Pillars of Growth (4 core ingredients) */
-        .pillars-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 1.5rem;
-            margin-top: 2rem;
-        }
-
-        .pillar-card {
-            background: white;
-            border-radius: var(--border-radius);
-            padding: 2rem 1.5rem;
-            border: 1px solid rgba(2, 132, 199, 0.05);
-            box-shadow: var(--card-shadow);
-            transition: var(--transition);
-            text-align: center;
-        }
-
-        .pillar-card:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--card-shadow-hover);
-        }
-
-        .pillar-badge {
-            background: var(--primary-light);
-            color: var(--primary-dark);
-            padding: 0.3rem 0.8rem;
-            border-radius: 50px;
-            font-size: 0.75rem;
-            font-weight: 700;
-            display: inline-block;
-            margin-bottom: 1rem;
-            text-transform: uppercase;
-        }
-
-        .pillar-title {
-            font-size: 1.15rem;
-            margin-bottom: 0.75rem;
-            color: #0f172a;
-        }
-
-        .pillar-desc {
-            font-size: 0.85rem;
-            color: var(--text-muted);
-            line-height: 1.5;
-        }
-
-        /* Target Audience Section */
-        .audience-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
-        }
-
-        .audience-card {
-            background: white;
-            border-radius: var(--border-radius);
-            overflow: hidden;
-            box-shadow: var(--card-shadow);
-            border: 1px solid rgba(2, 132, 199, 0.05);
-            transition: var(--transition);
-            display: flex;
-            flex-direction: column;
-        }
-
-        .audience-card:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--card-shadow-hover);
-        }
-
-        .audience-header {
-            padding: 2rem 2rem 1rem;
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-
-        .audience-icon {
-            width: 48px;
-            height: 48px;
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.25rem;
-            background: var(--primary-light);
-            color: var(--primary);
-        }
-
-        .audience-title {
-            font-size: 1.25rem;
-            font-weight: 700;
-        }
-
-        .audience-body {
-            padding: 0 2rem 2rem;
-            flex-grow: 1;
-        }
-
-        .audience-list {
-            list-style: none;
-            margin-top: 1rem;
-        }
-
-        .audience-list li {
-            position: relative;
-            padding-left: 1.5rem;
-            margin-bottom: 0.75rem;
-            font-size: 0.95rem;
-            color: var(--text-main);
-        }
-
-        .audience-list li::before {
-            content: "\f00c";
-            font-family: "Font Awesome 6 Free";
-            font-weight: 900;
-            position: absolute;
-            left: 0;
-            top: 2px;
-            color: var(--secondary);
-            font-size: 0.9rem;
-        }
-
-        /* Scientific Ingredients Section */
-        .ingredients-box {
-            background: white;
-            border-radius: 24px;
-            padding: 3rem;
-            box-shadow: var(--card-shadow);
-            border: 1px solid rgba(2, 132, 199, 0.05);
-        }
-
-        .ingredients-flex {
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-        }
-
-        .ingredient-row {
-            display: grid;
-            grid-template-columns: 280px 1fr;
-            gap: 2rem;
-            align-items: center;
-            padding-bottom: 1.5rem;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-        }
-
-        .ingredient-row:last-child {
-            border-bottom: none;
-            padding-bottom: 0;
-        }
-
-        .ingredient-name {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-
-        .ingredient-name-text {
-            font-weight: 700;
-            font-size: 1.1rem;
-            color: #0f172a;
-        }
-
-        .ingredient-qty {
-            background: var(--primary-light);
-            color: var(--primary-dark);
-            font-weight: 700;
-            padding: 0.3rem 0.8rem;
-            border-radius: 8px;
-            font-size: 0.85rem;
-            min-width: 80px;
-            text-align: center;
-            display: inline-block;
-        }
-
-        .ingredient-role {
-            font-size: 0.95rem;
-            color: var(--text-muted);
-            line-height: 1.6;
-        }
-
-        .ingredient-role strong {
-            color: var(--text-main);
-        }
-
-        /* Testimonials Section */
-        .testimonials-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
-        }
-
-        .testimonial-card {
-            background: white;
-            border-radius: var(--border-radius);
-            padding: 2.25rem 2rem;
-            box-shadow: var(--card-shadow);
-            border: 1px solid rgba(2, 132, 199, 0.05);
-            display: flex;
-            flex-direction: column;
-            position: relative;
-        }
-
-        .quote-icon {
-            position: absolute;
-            top: 2rem;
-            right: 2rem;
-            font-size: 2rem;
-            color: rgba(2, 132, 199, 0.1);
-        }
-
-        .stars {
-            color: var(--accent);
-            margin-bottom: 1rem;
-        }
-
-        .testimonial-text {
-            font-size: 0.95rem;
-            color: var(--text-main);
-            font-style: italic;
-            line-height: 1.6;
-            margin-bottom: 1.5rem;
-            flex-grow: 1;
-        }
-
-        .reviewer-info {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            margin-top: auto;
-        }
-
-        .reviewer-avatar {
-            width: 48px;
-            height: 48px;
-            border-radius: 50%;
-            background: var(--primary-light);
-            color: var(--primary);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 700;
-            font-size: 1.1rem;
-            border: 2px solid white;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-        }
-
-        .reviewer-details h5 {
-            font-size: 0.95rem;
-            font-weight: 700;
-            margin-bottom: 0.15rem;
-        }
-
-        .reviewer-details p {
-            font-size: 0.8rem;
-            color: var(--text-muted);
-        }
-
-        /* Pricing Packages & Countdown Timer */
-        .pricing-section {
-            background: linear-gradient(180deg, #f0f9ff 0%, #ffffff 100%);
-            border-top: 1px solid rgba(2, 132, 199, 0.05);
-        }
-
-        .countdown-container {
-            background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
-            color: white;
-            border-radius: 16px;
-            padding: 1.5rem 2rem;
-            max-width: 600px;
-            margin: 0 auto 3.5rem;
-            text-align: center;
-            box-shadow: 0 10px 25px rgba(239, 68, 68, 0.25);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 0.75rem;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .countdown-title {
-            font-size: 1.1rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .countdown-title i {
-            animation: pulse-icon 1.5s infinite;
-        }
-
-        .countdown-timer {
-            display: flex;
-            gap: 1rem;
-        }
-
-        .time-box {
-            background: rgba(255, 255, 255, 0.15);
-            padding: 0.5rem 1rem;
-            border-radius: 8px;
-            min-width: 70px;
-            backdrop-filter: blur(4px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .time-num {
-            font-size: 1.5rem;
-            font-weight: 800;
-            font-family: 'Outfit', sans-serif;
-            display: block;
-        }
-
-        .time-label {
-            font-size: 0.75rem;
-            font-weight: 600;
-            opacity: 0.8;
-            text-transform: uppercase;
-        }
-
-        .pricing-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
-            align-items: stretch;
-            margin-bottom: 4rem;
-        }
-
-        .price-card {
-            background: white;
-            border-radius: 20px;
-            padding: 3rem 2rem 2.5rem;
-            box-shadow: var(--card-shadow);
-            border: 1px solid rgba(2, 132, 199, 0.05);
-            text-align: center;
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            transition: var(--transition);
-        }
-
-        .price-card:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--card-shadow-hover);
-        }
-
-        .price-card.popular {
-            border: 2px solid var(--primary);
-            transform: scale(1.03);
-            box-shadow: 0 20px 40px rgba(2, 132, 199, 0.12);
-        }
-
-        .price-card.popular:hover {
-            transform: scale(1.03) translateY(-5px);
-            box-shadow: 0 25px 50px rgba(2, 132, 199, 0.18);
-        }
-
-        .card-ribbon {
-            position: absolute;
-            top: 0;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
-            color: white;
-            padding: 0.4rem 1.25rem;
-            border-radius: 50px;
-            font-weight: 700;
-            font-size: 0.8rem;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            box-shadow: 0 4px 12px rgba(2, 132, 199, 0.2);
-            white-space: nowrap;
-        }
-
-        .price-name {
-            font-size: 1.25rem;
-            font-weight: 700;
-            color: #0f172a;
-            margin-bottom: 0.5rem;
-        }
-
-        .price-tubes {
-            color: var(--primary);
-            font-weight: 700;
-            font-size: 0.95rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .price-box {
-            margin-bottom: 1.5rem;
-        }
-
-        .original-price {
-            text-decoration: line-through;
-            color: var(--text-muted);
-            font-size: 1.05rem;
-            display: block;
-            margin-bottom: 0.25rem;
-        }
-
-        .promo-price {
-            font-size: 2.25rem;
-            font-weight: 800;
-            color: #0f172a;
-            font-family: 'Outfit', sans-serif;
-        }
-
-        .promo-price span {
-            font-size: 1rem;
-            font-weight: 600;
-        }
-
-        .price-benefits {
-            list-style: none;
-            margin-bottom: 2rem;
-            text-align: left;
-            flex-grow: 1;
-        }
-
-        .price-benefits li {
-            position: relative;
-            padding-left: 1.5rem;
-            margin-bottom: 0.75rem;
-            font-size: 0.9rem;
-        }
-
-        .price-benefits li::before {
-            content: "\f00c";
-            font-family: "Font Awesome 6 Free";
-            font-weight: 900;
-            position: absolute;
-            left: 0;
-            top: 2px;
-            color: var(--secondary);
-        }
-
-        .price-btn {
-            width: 100%;
-            padding: 0.85rem 1.5rem;
-            border-radius: 50px;
-            font-weight: 700;
-            font-size: 0.95rem;
-            cursor: pointer;
-            transition: var(--transition);
-            border: none;
-        }
-
-        .price-card.popular .price-btn {
-            background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
-            color: white;
-            box-shadow: 0 4px 12px rgba(217, 119, 6, 0.2);
-        }
-
-        .price-card.popular .price-btn:hover {
-            box-shadow: 0 8px 20px rgba(217, 119, 6, 0.3);
-        }
-
-        .price-card .price-btn {
-            background: var(--primary-light);
-            color: var(--primary-dark);
-        }
-
-        .price-card .price-btn:hover {
-            background: var(--primary);
-            color: white;
-        }
-
-        /* Order Form Area */
-        .order-container {
-            display: grid;
-            grid-template-columns: 1fr 1.1fr;
-            gap: 4rem;
-            align-items: center;
-            background: white;
-            border-radius: 24px;
-            padding: 4rem;
-            box-shadow: var(--card-shadow);
-            border: 1px solid rgba(2, 132, 199, 0.05);
-        }
-
-        .order-info h3 {
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .order-info p {
-            color: var(--text-muted);
-            margin-bottom: 2rem;
-        }
-
-        .order-badges {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1.5rem;
-        }
-
-        .order-badge-item {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-
-        .order-badge-icon {
-            width: 48px;
-            height: 48px;
-            border-radius: 50%;
-            background: var(--primary-light);
-            color: var(--primary);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.2rem;
+            box-shadow: var(--shadow-sm);
             flex-shrink: 0;
         }
 
-        .order-badge-text h6 {
-            font-weight: 700;
-            font-size: 0.9rem;
-            margin-bottom: 0.15rem;
+        .ingredient-info h4 {
+            font-size: 1.15rem;
+            margin-bottom: 0.25rem;
+            color: var(--dark);
         }
 
-        .order-badge-text p {
-            font-size: 0.75rem;
-            color: var(--text-muted);
-            margin: 0;
-        }
-
-        .order-form-box {
-            background: var(--bg-light);
-            border-radius: 16px;
-            padding: 2.5rem;
-            border: 1px solid rgba(0, 0, 0, 0.05);
-        }
-
-        .form-group {
-            margin-bottom: 1.25rem;
-        }
-
-        .form-group label {
-            display: block;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-bottom: 0.5rem;
-            color: #0f172a;
-        }
-
-        .form-control {
-            width: 100%;
-            padding: 0.8rem 1.2rem;
-            border-radius: 10px;
-            border: 1px solid rgba(0, 0, 0, 0.1);
-            background: white;
-            font-family: inherit;
-            font-size: 0.95rem;
+        .ingredient-info p {
+            font-size: 0.925rem;
             color: var(--text-main);
-            transition: var(--transition);
+            margin-bottom: 0.25rem;
         }
 
-        .form-control:focus {
-            outline: none;
-            border-color: var(--primary);
-            box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
+        .ingredient-info span {
+            font-size: 0.825rem;
+            color: var(--text-muted);
+            font-style: italic;
         }
 
-        .form-select {
-            appearance: none;
-            -webkit-appearance: none;
-            background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3E%3C/svg%3E");
-            background-position: right 1rem center;
-            background-repeat: no-repeat;
-            background-size: 1.25rem;
-            padding-right: 2.5rem;
-        }
-
-        .form-submit-btn {
-            width: 100%;
-            background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+        .dosage-card {
+            background: linear-gradient(135deg, var(--dark-indigo) 0%, #1e1b4b 100%);
             color: white;
-            font-weight: 700;
-            font-size: 1.05rem;
-            padding: 1rem;
-            border-radius: 10px;
-            border: none;
-            cursor: pointer;
-            box-shadow: 0 4px 15px rgba(217, 119, 6, 0.2);
-            transition: var(--transition);
+            border-radius: var(--radius-lg);
+            padding: 2.5rem;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .dosage-card h3 {
+            color: white;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+            padding-bottom: 0.75rem;
             display: flex;
             align-items: center;
-            justify-content: center;
             gap: 0.5rem;
         }
 
-        .form-submit-btn:hover {
-            transform: translateY(-1px);
-            box-shadow: 0 6px 20px rgba(217, 119, 6, 0.3);
+        .dosage-card h3 i {
+            color: var(--secondary-light);
         }
 
-        .form-note {
-            font-size: 0.75rem;
-            color: var(--text-muted);
-            text-align: center;
-            margin-top: 1rem;
-        }
-
-        /* FAQ Section */
-        .faq-grid {
-            max-width: 800px;
-            margin: 0 auto;
+        .dosage-list {
             display: flex;
             flex-direction: column;
             gap: 1.25rem;
         }
 
+        .dosage-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .dosage-number {
+            background: rgba(255, 255, 255, 0.15);
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            color: #fbbf24;
+            flex-shrink: 0;
+        }
+
+        .dosage-text h4 {
+            color: white;
+            font-size: 1.05rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .dosage-text p {
+            font-size: 0.9rem;
+            opacity: 0.85;
+            line-height: 1.5;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            background-color: var(--bg-light);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .testimonial-card {
+            background-color: var(--bg-white);
+            border-radius: var(--radius-lg);
+            padding: 2rem;
+            box-shadow: var(--shadow-md);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+            transition: var(--transition);
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .stars {
+            color: #fbbf24;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+
+        .testimonial-card p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: var(--text-main);
+            margin-bottom: 1.5rem;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .author-avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background-color: var(--primary-light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            color: var(--primary);
+            font-size: 1.1rem;
+            text-transform: uppercase;
+        }
+
+        .author-info h4 {
+            font-size: 1rem;
+            color: var(--dark);
+            margin-bottom: 0.1rem;
+        }
+
+        .author-info p {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            margin-bottom: 0;
+            font-style: normal;
+        }
+
+        /* Combo Options & Order Form Section (Action) */
+        .pricing {
+            background-color: var(--bg-white);
+        }
+
+        .combo-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.1fr 1fr;
+            gap: 2rem;
+            align-items: stretch;
+            margin-bottom: 4rem;
+        }
+
+        .combo-card {
+            background-color: var(--bg-white);
+            border-radius: var(--radius-lg);
+            padding: 2.5rem 2rem;
+            box-shadow: var(--shadow-lg);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            transition: var(--transition);
+        }
+
+        .combo-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-premium);
+        }
+
+        .combo-card.popular {
+            border: 3px solid var(--primary);
+            box-shadow: var(--shadow-premium);
+            transform: scale(1.03);
+        }
+
+        .combo-card.popular:hover {
+            transform: scale(1.03) translateY(-5px);
+        }
+
+        .popular-badge {
+            position: absolute;
+            top: -16px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(90deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            padding: 0.4rem 1.25rem;
+            border-radius: var(--radius-full);
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            box-shadow: var(--shadow-md);
+        }
+
+        .combo-header h3 {
+            font-size: 1.35rem;
+            margin-bottom: 0.5rem;
+            color: var(--dark);
+        }
+
+        .combo-qty {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+        }
+
+        .price-box {
+            margin-bottom: 1.75rem;
+        }
+
+        .price-box .old {
+            text-decoration: line-through;
+            color: var(--text-muted);
+            font-size: 1rem;
+            margin-right: 0.5rem;
+            display: inline-block;
+        }
+
+        .price-box .current {
+            font-size: 2.25rem;
+            font-weight: 800;
+            color: var(--midu);
+            font-family: 'Outfit', sans-serif;
+            display: inline-block;
+        }
+
+        .combo-features {
+            text-align: left;
+            margin-bottom: 2rem;
+            background-color: var(--bg-light);
+            border-radius: var(--radius-md);
+            padding: 1.25rem;
+            flex-grow: 1;
+        }
+
+        .combo-features li {
+            position: relative;
+            padding-left: 1.75rem;
+            margin-bottom: 0.75rem;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .combo-features li:last-child {
+            margin-bottom: 0;
+        }
+
+        .combo-features li::before {
+            content: "\f058";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            top: 2px;
+            color: var(--secondary);
+        }
+
+        .order-container-box {
+            background-color: var(--bg-light);
+            border-radius: var(--radius-lg);
+            padding: 3rem;
+            max-width: 900px;
+            margin: 0 auto;
+            border: 1px solid rgba(226, 232, 240, 0.8);
+            box-shadow: var(--shadow-lg);
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 3rem;
+        }
+
+        .order-form-wrapper h3 {
+            font-size: 1.6rem;
+            margin-bottom: 0.75rem;
+            color: var(--dark);
+        }
+
+        .order-form-wrapper p {
+            color: var(--text-muted);
+            font-size: 0.925rem;
+            margin-bottom: 1.75rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.25rem;
+            position: relative;
+        }
+
+        .form-label {
+            display: block;
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: var(--dark);
+            margin-bottom: 0.4rem;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 0.8rem 1rem;
+            border-radius: var(--radius-sm);
+            border: 1px solid rgba(203, 213, 225, 0.8);
+            background-color: var(--bg-white);
+            color: var(--dark);
+            font-family: inherit;
+            font-size: 0.95rem;
+            outline: none;
+            transition: var(--transition);
+        }
+
+        .form-input:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+        }
+
+        .form-select {
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23475569'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 1rem center;
+            background-size: 1.15rem;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.25rem;
+        }
+
+        .order-summary-card {
+            background-color: var(--bg-white);
+            border-radius: var(--radius-md);
+            padding: 2rem 1.5rem;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .summary-header {
+            border-bottom: 2px dashed rgba(226, 232, 240, 0.8);
+            padding-bottom: 1rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .summary-header h4 {
+            font-size: 1.2rem;
+            color: var(--dark);
+        }
+
+        .summary-details {
+            display: flex;
+            flex-direction: column;
+            gap: 0.85rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .summary-line {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.95rem;
+        }
+
+        .summary-line.total {
+            border-top: 1px solid rgba(226, 232, 240, 0.8);
+            padding-top: 1rem;
+            font-weight: 800;
+            font-size: 1.25rem;
+            color: var(--midu);
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .order-gifts-box {
+            background-color: var(--accent-light);
+            border: 1px solid rgba(217, 119, 6, 0.2);
+            border-radius: var(--radius-sm);
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .order-gifts-box h5 {
+            color: var(--accent);
+            font-size: 0.9rem;
+            margin-bottom: 0.4rem;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .order-gifts-box p {
+            font-size: 0.8rem;
+            color: var(--text-main);
+            line-height: 1.4;
+            margin-bottom: 0;
+        }
+
+        .trust-seals {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .trust-seals span {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+
+        .trust-seals i {
+            color: var(--secondary);
+        }
+
+        /* FAQ Section */
+        .faq {
+            background-color: var(--bg-light);
+        }
+
+        .faq-accordion {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
         .faq-item {
-            background: white;
-            border-radius: var(--border-radius);
-            border: 1px solid rgba(2, 132, 199, 0.05);
-            box-shadow: var(--card-shadow);
+            background-color: var(--bg-white);
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid rgba(226, 232, 240, 0.8);
             overflow: hidden;
             transition: var(--transition);
         }
 
         .faq-question {
-            padding: 1.5rem 2rem;
+            padding: 1.25rem 1.5rem;
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--dark);
+            cursor: pointer;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            cursor: pointer;
-            font-weight: 700;
-            font-size: 1.05rem;
-            background: white;
-            transition: var(--transition);
             user-select: none;
+            transition: var(--transition);
         }
 
         .faq-question:hover {
+            background-color: rgba(79, 70, 229, 0.02);
             color: var(--primary);
+        }
+
+        .faq-question i {
+            font-size: 0.9rem;
+            transition: transform 0.3s ease;
+            color: var(--text-muted);
         }
 
         .faq-answer {
             max-height: 0;
             overflow: hidden;
-            transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            background: white;
-        }
-
-        .faq-answer-inner {
-            padding: 0 2rem 1.5rem;
+            transition: max-height 0.3s ease-out;
+            padding: 0 1.5rem;
             font-size: 0.95rem;
-            color: var(--text-muted);
-            border-top: 1px solid rgba(0, 0, 0, 0.02);
             line-height: 1.6;
+            color: var(--text-main);
+            border-top: 1px solid transparent;
         }
 
-        .faq-item.active .faq-answer {
-            max-height: 500px;
+        .faq-item.active .faq-question {
+            color: var(--primary);
+            border-bottom: 1px solid rgba(226, 232, 240, 0.8);
         }
 
-        .faq-icon-arrow {
-            transition: transform 0.3s ease;
-            font-size: 0.9rem;
-            color: var(--text-muted);
-        }
-
-        .faq-item.active .faq-icon-arrow {
+        .faq-item.active .faq-question i {
             transform: rotate(180deg);
             color: var(--primary);
         }
 
+        .faq-item.active .faq-answer {
+            max-height: 250px;
+            padding: 1.25rem 1.5rem;
+        }
+
         /* Footer */
         footer {
-            background: #0f172a;
-            color: #94a3b8;
-            padding: 4rem 0 2rem;
-            font-size: 0.9rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            background-color: var(--dark-indigo);
+            color: rgba(255, 255, 255, 0.8);
+            padding: 4.5rem 0 2rem;
+            font-size: 0.95rem;
+            border-top: 4px solid var(--primary-dark);
         }
 
         .footer-grid {
             display: grid;
             grid-template-columns: 1.2fr 0.8fr 1fr;
             gap: 4rem;
-            margin-bottom: 3rem;
+            margin-bottom: 3.5rem;
         }
 
-        .footer-logo {
+        .footer-col h4 {
             color: white;
-            font-size: 1.5rem;
-            font-family: 'Outfit', sans-serif;
-            font-weight: 800;
+            font-size: 1.15rem;
             margin-bottom: 1.5rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
+            font-family: 'Outfit', sans-serif;
+            position: relative;
         }
 
-        .footer-logo span {
-            color: var(--secondary);
+        .footer-col h4::after {
+            content: '';
+            display: block;
+            width: 40px;
+            height: 2px;
+            background-color: var(--secondary);
+            margin-top: 0.5rem;
         }
 
-        .footer-title {
+        .footer-col p {
+            line-height: 1.7;
+            margin-bottom: 1rem;
+        }
+
+        .footer-col strong {
             color: white;
-            font-family: 'Outfit', sans-serif;
-            font-size: 1.1rem;
-            font-weight: 700;
-            margin-bottom: 1.5rem;
         }
 
         .footer-links {
             list-style: none;
-            display: flex;
-            flex-direction: column;
-            gap: 0.75rem;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.75rem;
         }
 
         .footer-links a {
             transition: var(--transition);
+            display: inline-block;
         }
 
         .footer-links a:hover {
             color: white;
+            transform: translateX(3px);
         }
 
-        .footer-contact {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
+        .contact-info {
+            list-style: none;
         }
 
-        .footer-contact-item {
+        .contact-info li {
             display: flex;
-            gap: 0.75rem;
             align-items: flex-start;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
         }
 
-        .footer-contact-item i {
-            color: var(--primary);
-            font-size: 1rem;
+        .contact-info i {
+            color: var(--secondary);
+            font-size: 1.1rem;
             margin-top: 0.2rem;
         }
 
         .footer-bottom {
-            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
             padding-top: 2rem;
-            text-align: center;
-            font-size: 0.8rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.85rem;
         }
 
-        .footer-bottom p {
-            margin-bottom: 0.5rem;
+        .footer-bottom-links {
+            display: flex;
+            gap: 1.5rem;
         }
 
-        /* Order Success Modal */
-        .modal-overlay {
+        .footer-bottom-links a:hover {
+            color: white;
+        }
+
+        /* Success Order Modal */
+        .modal {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(15, 23, 42, 0.6);
-            backdrop-filter: blur(4px);
-            z-index: 2000;
+            background-color: rgba(15, 23, 42, 0.7);
             display: flex;
             align-items: center;
             justify-content: center;
+            z-index: 2000;
             opacity: 0;
             pointer-events: none;
-            transition: opacity 0.3s ease;
+            transition: var(--transition);
+            padding: 1.5rem;
         }
 
-        .modal-overlay.active {
+        .modal.active {
             opacity: 1;
-            pointer-events: all;
+            pointer-events: auto;
         }
 
-        .modal-box {
-            background: white;
-            border-radius: 24px;
+        .modal-card {
+            background-color: var(--bg-white);
+            border-radius: var(--radius-lg);
             padding: 3rem 2.5rem;
-            max-width: 500px;
-            width: 90%;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            max-width: 550px;
+            width: 100%;
+            box-shadow: var(--shadow-lg);
             text-align: center;
             transform: scale(0.9);
-            transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-            border: 1px solid rgba(2, 132, 199, 0.1);
+            transition: var(--transition);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+            position: relative;
         }
 
-        .modal-overlay.active .modal-box {
+        .modal.active .modal-card {
             transform: scale(1);
         }
 
         .modal-icon {
+            font-size: 3rem;
+            color: var(--secondary);
+            background-color: var(--secondary-light);
             width: 80px;
             height: 80px;
-            background: var(--secondary-light);
-            color: var(--secondary);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 2.5rem;
             margin: 0 auto 1.5rem;
-            box-shadow: 0 10px 20px rgba(16, 185, 129, 0.15);
         }
 
-        .modal-title {
+        .modal-card h3 {
             font-size: 1.75rem;
-            margin-bottom: 0.75rem;
+            margin-bottom: 1rem;
+            color: var(--dark);
         }
 
         .modal-message {
-            color: var(--text-muted);
-            margin-bottom: 2rem;
-            font-size: 0.95rem;
+            font-size: 1rem;
             line-height: 1.6;
+            color: var(--text-main);
+            margin-bottom: 2rem;
+            text-align: left;
+            background-color: var(--bg-light);
+            padding: 1.25rem;
+            border-radius: var(--radius-md);
+            border: 1px solid rgba(226, 232, 240, 0.8);
         }
 
         .modal-close-btn {
-            background: var(--primary);
+            background-color: var(--dark-indigo);
             color: white;
-            border: none;
-            padding: 0.8rem 2rem;
-            border-radius: 50px;
-            font-weight: 700;
+            padding: 0.85rem 2rem;
+            font-size: 0.95rem;
+            font-weight: 600;
+            border-radius: var(--radius-full);
             cursor: pointer;
+            border: none;
             transition: var(--transition);
             width: 100%;
         }
 
         .modal-close-btn:hover {
-            background: var(--primary-dark);
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
         }
 
-        /* Fixed Sticky CTA for Mobile */
-        .mobile-sticky-cta {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            background: white;
-            box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.1);
-            padding: 0.8rem 1.5rem;
-            display: none;
-            z-index: 999;
-            border-top: 1px solid rgba(2, 132, 199, 0.1);
-        }
-
-        .mobile-sticky-cta .btn {
-            width: 100%;
-            padding: 0.8rem;
-            font-size: 0.95rem;
-        }
-
-        /* Animations */
-        @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
-        }
-
-        @keyframes float-delayed {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
-        }
-
-        .badge-1 {
-            animation-duration: 5s;
-        }
-        .badge-2 {
-            animation-duration: 6s;
-            animation-delay: 1s;
-        }
-
-        @keyframes pulse-amber {
-            0% {
-                box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.4);
-            }
-            70% {
-                box-shadow: 0 0 0 15px rgba(245, 158, 11, 0);
-            }
-            100% {
-                box-shadow: 0 0 0 0 rgba(245, 158, 11, 0);
-            }
-        }
-
-        @keyframes pulse-icon {
-            0%, 100% { opacity: 1; transform: scale(1); }
-            50% { opacity: 0.6; transform: scale(1.1); }
-        }
-
-        /* Responsive Breakpoints */
+        /* Responsive Styles */
         @media (max-width: 1024px) {
             .hero-grid {
-                grid-template-columns: 1fr;
-                gap: 4rem;
-                text-align: center;
-            }
-
-            .hero-tag {
-                margin: 0 auto 1.25rem;
-            }
-
-            .hero-bullets {
-                justify-items: center;
-            }
-
-            .hero-bullets li {
-                justify-content: center;
-            }
-
-            .hero-ctas {
-                justify-content: center;
-            }
-
-            .hero-img-container {
-                max-width: 450px;
-                margin: 0 auto;
-            }
-
-            .trust-grid {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 2.5rem;
-            }
-
-            .paradox-grid {
-                grid-template-columns: 1fr;
-                max-width: 550px;
-                margin: 2rem auto 0;
-            }
-
-            .pillars-grid {
-                grid-template-columns: repeat(2, 1fr);
                 gap: 2rem;
             }
-
-            .audience-grid {
-                grid-template-columns: 1fr;
-                max-width: 550px;
-                margin: 0 auto;
+            .hero-content h1 {
+                font-size: 2.5rem;
             }
-
-            .pricing-grid {
+            .combo-grid {
                 grid-template-columns: 1fr;
-                max-width: 450px;
-                margin: 0 auto 3rem;
                 gap: 2.5rem;
+                max-width: 500px;
+                margin: 0 auto 4rem;
             }
-
-            .price-card.popular {
+            .combo-card.popular {
                 transform: scale(1);
             }
-
-            .price-card.popular:hover {
+            .combo-card.popular:hover {
                 transform: translateY(-5px);
-            }
-
-            .order-container {
-                grid-template-columns: 1fr;
-                gap: 3rem;
-                padding: 3rem 2rem;
-            }
-
-            .footer-grid {
-                grid-template-columns: 1fr;
-                gap: 2.5rem;
             }
         }
 
         @media (max-width: 768px) {
-            html {
-                font-size: 15px;
-            }
-
             section {
-                padding: 3.5rem 0;
+                padding: 4rem 0;
             }
-
-            #hero {
-                padding-top: 7rem;
-            }
-
-            .hero-title {
-                font-size: 2.25rem;
-            }
-
-            .nav-links {
-                display: none;
-            }
-
-            .mobile-menu-btn {
+            .menu-toggle {
                 display: block;
             }
-
-            .solution-block-grid {
+            nav {
+                display: none; /* Mobile menu toggled via JS or just simplify */
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background-color: var(--bg-white);
+                padding: 1.5rem;
+                box-shadow: var(--shadow-lg);
+                border-top: 1px solid rgba(226, 232, 240, 0.8);
+                flex-direction: column;
+                gap: 1.25rem;
+                align-items: flex-start;
+            }
+            nav.active {
+                display: flex;
+            }
+            .hero-grid {
+                grid-template-columns: 1fr;
+                gap: 3.5rem;
+                text-align: center;
+            }
+            .hero-benefits {
+                justify-items: center;
+            }
+            .hero-cta {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .hero-floating-badge {
+                display: none; /* Hide floating badges on mobile to prevent overflow */
+            }
+            .problem-grid, .profile-grid, .specs-grid, .order-container-box {
                 grid-template-columns: 1fr;
                 gap: 2.5rem;
             }
-
-            .solution-block {
-                padding: 2rem;
+            .problem-illustration {
+                order: 2;
             }
-
-            .ingredient-row {
-                grid-template-columns: 1fr;
-                gap: 0.5rem;
-                padding-bottom: 1.25rem;
-            }
-
-            .ingredient-qty {
-                width: max-content;
-            }
-
-            .ingredients-box {
-                padding: 2rem;
-            }
-
-            .testimonials-grid {
-                grid-template-columns: 1fr;
-                max-width: 500px;
+            .profile-image-card {
+                max-width: 380px;
                 margin: 0 auto;
             }
-
-            .mobile-sticky-cta {
-                display: block;
-            }
-
-            body {
-                padding-bottom: 60px; /* Space for mobile sticky CTA */
-            }
-        }
-
-        @media (max-width: 480px) {
-            .hero-title {
-                font-size: 2rem;
-            }
-
-            .trust-grid {
+            .testimonials-grid {
                 grid-template-columns: 1fr;
                 gap: 1.5rem;
+                max-width: 500px;
+                margin: 3rem auto 0;
             }
-
-            .pillars-grid {
-                grid-template-columns: 1fr;
+            .order-container-box {
+                padding: 1.5rem;
             }
-
-            .order-badges {
+            .footer-grid {
                 grid-template-columns: 1fr;
+                gap: 2.5rem;
+            }
+            .footer-bottom {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+            .section-header h2 {
+                font-size: 1.85rem;
             }
         }
     </style>
 </head>
 <body>
 
-    <!-- Header / Navigation -->
+    <!-- Glowing Backgrounds -->
+    <div class="glow-blob glow-1"></div>
+    <div class="glow-blob glow-2"></div>
+
+    <!-- Top Promotion Bar -->
+    <div class="promo-bar">
+        🔥 ĐẶC BIỆT HÔM NAY: Miễn phí vận chuyển toàn quốc + Nhận ngay cẩm nang phác đồ tăng chiều cao <span>Kết thúc sau:</span>
+        <span class="timer-container">
+            <span id="hours">02</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
+        </span>
+    </div>
+
+    <!-- Header Navigation -->
     <header id="header">
         <div class="container">
-            <div class="nav-wrapper">
-                <a href="#" class="logo">
-                    <i class="fa-solid fa-droplet text-primary"></i> Midu <span>MenaQ7</span>
-                </a>
-                <ul class="nav-links">
-                    <li><a href="#paradox">Vấn Đề</a></li>
-                    <li><a href="#solution">Giải Pháp</a></li>
-                    <li><a href="#audience">Đối Tượng</a></li>
-                    <li><a href="#ingredients">Thành Phần</a></li>
-                    <li><a href="#pricing">Báo Giá</a></li>
-                    <li><a href="#faq">Hỏi Đáp</a></li>
-                    <li><a href="#order-section" class="nav-btn">Đặt Hàng Ngay</a></li>
-                </ul>
-                <button class="mobile-menu-btn" onclick="scrollToOrder()">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                </button>
-            </div>
+            <a href="#" class="logo">
+                <div>
+                    <span class="logo-text">Midu MenaQ7</span>
+                    <span class="logo-subtitle">Magie Citizen</span>
+                </div>
+            </a>
+            <i class="fa-solid fa-bars menu-toggle" id="menuToggle"></i>
+            <nav id="navbar">
+                <a href="#lo-ngai" onclick="closeMenu()">Nỗi Lo</a>
+                <a href="#khoa-hoc" onclick="closeMenu()">Khoa Học</a>
+                <a href="#khac-biet" onclick="closeMenu()">Sự Khác Biệt</a>
+                <a href="#duoc-si-thieu" onclick="closeMenu()">Dược Sĩ Đồng Thêu</a>
+                <a href="#phac-do" onclick="closeMenu()">Thành Phần</a>
+                <a href="#dat-mua" onclick="closeMenu()">Ưu Đãi</a>
+            </nav>
+            <a href="#dat-mua" class="btn btn-primary" style="padding: 0.6rem 1.5rem; font-size: 0.85rem; display: none;">Đặt Mua Ngay</a>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section id="hero" class="bg-gradient-blue-soft">
+    <section class="hero">
         <div class="container">
             <div class="hero-grid">
                 <div class="hero-content">
-                    <div class="hero-tag">
-                        <i class="fa-solid fa-star"></i> Canxi Dẫn Đường Na Uy
+                    <span class="badge badge-primary">Chìa Khóa Vàng Bị Bỏ Quên</span>
+                    <h1>Con Trằn Trọc Khóc Đêm, Mẹ Bầu Chuột Rút Mất Ngủ - Uống Canxi Đều Mà Vẫn Không Tăng Chiều Cao?</h1>
+                    <p>Bổ sung ngay <strong>Midu Magie Citizen</strong> - Magie hữu cơ dạng nước siêu hấp thu từ thương hiệu Midu MenaQ7 danh tiếng. Giải pháp vàng xoa dịu hệ thần kinh trung ương giúp trẻ ngủ ngon giấc, mẹ bầu êm giấc, đồng thời kích hoạt tối đa khả năng cố định canxi của vitamin D3-K2 để bứt phá chiều cao.</p>
+                    
+                    <div class="hero-benefits">
+                        <div class="hero-benefit-item">
+                            <i class="fa-solid fa-check"></i>
+                            <span>Magie hữu cơ siêu hấp thu</span>
+                        </div>
+                        <div class="hero-benefit-item">
+                            <i class="fa-solid fa-check"></i>
+                            <span>Êm dạ dày, không táo bón</span>
+                        </div>
+                        <div class="hero-benefit-item">
+                            <i class="fa-solid fa-check"></i>
+                            <span>Giấc ngủ sâu tự nhiên</span>
+                        </div>
+                        <div class="hero-benefit-item">
+                            <i class="fa-solid fa-check"></i>
+                            <span>Tối ưu hấp thu Canxi</span>
+                        </div>
                     </div>
-                    <h1 class="hero-title">
-                        Bứt Phá Chiều Cao Vàng<br>
-                        <span class="text-gradient">Không Lo Táo Bón</span>
-                    </h1>
-                    <p class="hero-desc">
-                        <strong>Midu MenaQ7 180mcg</strong> bổ sung Canxi hữu cơ dễ hấp thu, kết hợp <strong>Vitamin K2 (MenaQ7) 180mcg nhập khẩu Na Uy</strong> và D3. Công thức đột phá dẫn đường canxi trực tiếp vào xương, ngăn chặn tối đa lắng cặn sỏi thận.
-                    </p>
-                    <ul class="hero-bullets">
-                        <li><i class="fa-solid fa-circle-check"></i> <span><strong>Cao lớn vượt trội:</strong> Giúp phát triển chiều cao lý tưởng cho trẻ từ 1-15 tuổi.</span></li>
-                        <li><i class="fa-solid fa-circle-check"></i> <span><strong>Mẹ bầu an tâm:</strong> Bổ sung canxi không lo táo bón hay tiểu đường thai kỳ.</span></li>
-                        <li><i class="fa-solid fa-circle-check"></i> <span><strong>Xương chắc khỏe:</strong> Giảm nguy cơ loãng xương cho người già.</span></li>
-                    </ul>
-                    <div class="hero-ctas">
-                        <a href="#pricing" class="btn btn-accent"><i class="fa-solid fa-cart-shopping"></i> Mua Ngay Nhận Ưu Đãi</a>
-                        <a href="#order-section" class="btn btn-outline" onclick="selectConsultation()"><i class="fa-solid fa-phone"></i> Nhận Tư Vấn Miễn Phí</a>
+
+                    <div class="hero-cta">
+                        <a href="#dat-mua" class="btn btn-midu">Nhận Ưu Đãi Ngay</a>
+                        <div class="hero-trust-badge">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            <span>5.409+ Mẹ Việt tin dùng & đánh giá 5★</span>
+                        </div>
                     </div>
                 </div>
                 
-                <div class="hero-img-container">
-                    <div class="hero-glow-blob"></div>
-                    <div class="hero-img-wrapper">
-                        <img src="./anh%20mcg180.jpg" alt="Midu MenaQ7 180mcg Hộp 30 ống" class="hero-img">
-                        <div class="floating-badge badge-1">
-                            <i class="fa-solid fa-ribbon"></i> <span>Hộp 30 ống uống</span>
+                <div class="hero-image-wrapper">
+                    <div class="hero-image-bg"></div>
+                    <div class="hero-image-card">
+                        <!-- Using correct image copied to workspace root -->
+                        <img src="./magie-citizen.jpg" alt="Thực phẩm bổ sung Midu Magie Citizen Hộp 30 ống">
+                    </div>
+                    <!-- Floating badges -->
+                    <div class="hero-floating-badge badge-float-1">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                        <div>
+                            <div class="n">Hữu Cơ</div>
+                            <div class="lbl">Lactate + Gluconat</div>
                         </div>
-                        <div class="floating-badge badge-2">
-                            <i class="fa-solid fa-shield-halved"></i> <span>Chính Hãng Na Uy</span>
+                    </div>
+                    <div class="hero-floating-badge badge-float-2">
+                        <i class="fa-solid fa-face-smile-beam"></i>
+                        <div>
+                            <div class="n">Dạng Lỏng</div>
+                            <div class="lbl">Dễ uống & Chia liều</div>
                         </div>
                     </div>
                 </div>
@@ -1720,249 +1824,288 @@
         </div>
     </section>
 
-    <!-- Trust Stats Bar -->
-    <div class="trust-bar">
+    <!-- Problem Section -->
+    <section class="problem" id="lo-ngai">
         <div class="container">
-            <div class="trust-grid">
-                <div class="stat-item">
-                    <h3>500k+</h3>
-                    <p>Trẻ Em Việt Nam Đã Dùng</p>
+            <div class="problem-grid">
+                <div class="problem-illustration">
+                    <div class="problem-card">
+                        <i class="fa-solid fa-bed"></i>
+                        <h4>Trằn trọc, Khóc đêm</h4>
+                        <p>Trẻ thiếu Magie dẫn đến hệ thần kinh luôn hưng phấn, con khó đi vào giấc ngủ, hay giật mình quấy khóc ban đêm.</p>
+                    </div>
+                    <div class="problem-card">
+                        <i class="fa-solid fa-bolt"></i>
+                        <h4>Chuột rút, Co cơ</h4>
+                        <p>Mẹ bầu đau nhức lưng, chuột rút bắp chân lúc nửa đêm. Trẻ lớn hay đau mỏi cơ xương ("đau tăng trưởng").</p>
+                    </div>
+                    <div class="problem-card">
+                        <i class="fa-solid fa-arrows-up-to-line"></i>
+                        <h4>Uống Canxi vẫn lùn</h4>
+                        <p>Uống nhiều canxi và D3K2 nhưng xương không dài ra, răng mọc chậm, cơ thể thấp bé do thiếu Magie dẫn truyền.</p>
+                    </div>
+                    <div class="problem-card">
+                        <i class="fa-solid fa-brain"></i>
+                        <h4>Căng thẳng, Cáu gắt</h4>
+                        <p>Người lớn căng thẳng, mất ngủ, đau đầu. Trẻ em nghịch ngợm quá mức, khó tập trung, hay cáu gắt vô cớ.</p>
+                    </div>
                 </div>
-                <div class="stat-item">
-                    <h3>180mcg</h3>
-                    <p>Hàm lượng K2 MenaQ7 cao</p>
-                </div>
-                <div class="stat-item">
-                    <h3>98%</h3>
-                    <p>Phản hồi tích cực</p>
-                </div>
-                <div class="stat-item">
-                    <h3>1-100</h3>
-                    <p>Phù hợp mọi độ tuổi</p>
+                
+                <div class="problem-content">
+                    <span class="badge badge-midu">Nỗi lo của cha mẹ</span>
+                    <h3 style="margin-top: 1rem;">Có phải bạn đang lãng phí Canxi và bỏ quên "Mắt Xích Vàng" quan trọng nhất?</h3>
+                    <p>Hàng ngày, mẹ cố gắng cho con uống nhiều sữa, bổ sung Canxi thế hệ mới, uống D3K2 đều đặn... Nhưng con vẫn trằn trọc mỗi đêm, mồ hôi trộm đầm đìa và chiều cao phát triển rất chậm.</p>
+                    <p>Thực tế khoa học đã chứng minh: <strong>Canxi không thể tự hoạt động hiệu quả nếu thiếu Magie.</strong> Thiếu Magie, Vitamin D3 không thể được kích hoạt để hấp thu Canxi, dẫn đến tình trạng Canxi bị trôi nổi tự do trong mạch máu, gây táo bón, lắng cặn sỏi thận nguy hiểm mà xương vẫn thiếu hụt trầm trọng.</p>
+                    
+                    <div class="problem-callout">
+                        <h4><i class="fa-solid fa-triangle-exclamation"></i> CẢNH BÁO KHOA HỌC:</h4>
+                        <p>Nếu bổ sung Canxi liên tục mà không cân bằng tỷ lệ Magie tương ứng, cơ thể sẽ tự động rút Magie từ xương và cơ để trung hòa lượng canxi dư thừa. Kết quả là xương của con càng dễ bị xốp, cơ bắp dễ chuột rút và hệ thần kinh luôn trong trạng thái căng thẳng, kích ứng!</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- Section: The Calcium Paradox (Vấn đề) -->
-    <section id="paradox">
+    <!-- Science Section -->
+    <section class="science" id="khoa-hoc">
         <div class="container">
             <div class="section-header">
-                <span class="section-subtitle">Nghịch Lý Canxi</span>
-                <h2 class="section-title">Tại sao uống nhiều Canxi con vẫn thấp còi?</h2>
-                <p class="section-desc">Bổ sung canxi sai cách không chỉ khiến trẻ không cao lên mà còn gây ra những hệ quả nguy hiểm cho sức khỏe.</p>
+                <span class="badge badge-primary">Giải Pháp Khoa Học Đột Phá</span>
+                <h2 style="margin-top:1rem;">Cơ Chế Hấp Thu Canxi & Giúp Ngủ Ngon Sâu Giấc Tự Nhiên</h2>
+                <p>Midu Magie Citizen kết hợp hoàn hảo giữa 2 dòng Magie hữu cơ cao cấp cùng Vitamin B6 tạo nên sức mạnh xoa dịu hệ thần kinh trung ương và tối ưu hóa hệ cơ xương.</p>
             </div>
-
-            <div class="paradox-grid">
-                <div class="paradox-card card-danger">
-                    <div class="paradox-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
-                    <h4>1. Canxi tự do (Không có D3)</h4>
-                    <p>Canxi khi đưa vào cơ thể nếu không có Vitamin D3 sẽ <strong>chỉ hấp thu được 10%</strong> qua ruột. 90% còn lại bị đào thải ra ngoài gây <strong>táo bón, nóng trong, rối loạn tiêu hóa</strong>.</p>
+            
+            <div class="science-cards">
+                <div class="science-card">
+                    <div>
+                        <div class="science-card-header">
+                            <div class="science-card-icon"><i class="fa-solid fa-dna"></i></div>
+                            <h3>Kích Hoạt Hấp Thu & Cố Định Canxi Vào Xương</h3>
+                        </div>
+                        <p>Magie đóng vai trò quyết định trong việc chuyển hóa vitamin D3 thành dạng hoạt động (Calcitriol) trong cơ thể. Ngoài ra, Magie kích thích hormone Calcitonin giúp kéo canxi từ máu vào trong xương, ngăn ngừa canxi lắng đọng ở các mô mềm.</p>
+                    </div>
+                    <ul class="science-features">
+                        <li>Kích hoạt 100% hoạt tính của vitamin D3</li>
+                        <li>Ngăn ngừa lắng cặn tại thận (sỏi thận), mạch máu và dạ dày</li>
+                        <li>Tăng mật độ khoáng xương giúp xương dày hơn, chắc khỏe hơn</li>
+                    </ul>
                 </div>
 
-                <div class="paradox-card card-warning">
-                    <div class="paradox-icon"><i class="fa-solid fa-circle-exclamation"></i></div>
-                    <h4>2. Canxi đi lạc (Có D3 nhưng thiếu K2)</h4>
-                    <p>Có D3 giúp hấp thu Canxi vào máu, nhưng thiếu Vitamin K2 dẫn đường, Canxi sẽ di chuyển tự do. Chúng dễ lắng đọng ở <strong>mô mềm, mạch máu (gây xơ vữa)</strong> và ở <strong>thận (gây sỏi thận)</strong> thay vị vào xương.</p>
-                </div>
-
-                <div class="paradox-card card-success">
-                    <div class="paradox-icon"><i class="fa-solid fa-circle-check"></i></div>
-                    <h4>3. Giải pháp trọn vẹn (D3 + K2 MenaQ7)</h4>
-                    <p><strong>Vitamin K2 (dạng MenaQ7)</strong> đóng vai trò định vị, kích hoạt protein để gắn Canxi trực tiếp vào tế bào xương. Giúp xương chắc khỏe, răng sáng bóng và <strong>bứt phá chiều cao tối đa</strong>.</p>
+                <div class="science-card">
+                    <div>
+                        <div class="science-card-header">
+                            <div class="science-card-icon"><i class="fa-solid fa-moon"></i></div>
+                            <h3>Bộ Đôi Vàng Magie Hữu Cơ & Vitamin B6 Giúp Ngủ Ngon</h3>
+                        </div>
+                        <p>Magie giúp thư giãn các bó cơ và liên kết với các thụ thể GABA (chất dẫn truyền thần kinh ức chế), xoa dịu thần kinh trung ương. Vitamin B6 hoạt động như một "chất vận chuyển chuyên biệt" đưa Magie xuyên qua màng tế bào đi sâu vào bên trong cơ và não bộ.</p>
+                    </div>
+                    <ul class="science-features">
+                        <li>Làm dịu hệ thần kinh nhạy cảm của trẻ nhỏ</li>
+                        <li>Giảm nồng độ cortisol, ngăn chặn căng thẳng, stress</li>
+                        <li>Tạo giấc ngủ tự nhiên sâu giấc, hết hẳn chuột rút ban đêm</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section: Product Introduction -->
-    <section id="solution" class="bg-gradient-blue-dark">
-        <div class="container">
-            <div class="solution-block">
-                <div class="solution-block-grid">
-                    <div class="solution-info">
-                        <span class="section-subtitle" style="color: var(--accent);">Midu MenaQ7 180mcg</span>
-                        <h2 class="solution-title">Giải pháp toàn diện tăng chiều cao chuẩn khoa học</h2>
-                        <p class="solution-desc">
-                            Không đơn thuần là bổ sung Canxi, Midu MenaQ7 180mcg là công trình khoa học giúp chuyển hóa Canxi hiệu quả nhất vào xương nhờ sự có mặt của Vitamin K2 dạng MenaQ7 chính hãng Na Uy với hàm lượng tối ưu.
-                        </p>
-                        <ul class="solution-features">
-                            <li><i class="fa-solid fa-circle-check"></i> Canxi hữu cơ Glucoheptonate cực kỳ mát, không nóng trong.</li>
-                            <li><i class="fa-solid fa-circle-check"></i> Vitamin K2 chất lượng cao nhất toàn cầu từ Na Uy.</li>
-                            <li><i class="fa-solid fa-circle-check"></i> Bổ sung L-Arginine kích thích hormone tăng trưởng tự nhiên.</li>
-                            <li><i class="fa-solid fa-circle-check"></i> Dạng ống nước 10ml ngọt thanh, dễ hấp thụ, trẻ rất yêu thích.</li>
-                        </ul>
-                    </div>
-                    <div class="solution-img-wrapper">
-                        <img src="./anh%20mcg180.jpg" alt="Midu MenaQ7 180mcg uống" class="solution-img">
-                    </div>
-                </div>
-            </div>
-
-            <!-- Four Pillars Grid -->
-            <div class="pillars-grid">
-                <div class="pillar-card">
-                    <span class="pillar-badge">Vitamin K2</span>
-                    <h5 class="pillar-title">MenaQ7 180 mcg</h5>
-                    <p class="pillar-desc">Nhập khẩu từ Tập đoàn NattoPharma - Na Uy. Chìa khóa vàng định vị canxi đi thẳng vào tế bào xương.</p>
-                </div>
-
-                <div class="pillar-card">
-                    <span class="pillar-badge">Canxi Hữu Cơ</span>
-                    <h5 class="pillar-title">Calci Glucoheptonate</h5>
-                    <p class="pillar-desc">Canxi dạng nước hữu cơ siêu hòa tan, thân thiện dạ dày, hấp thu cực nhanh và không gây táo bón.</p>
-                </div>
-
-                <div class="pillar-card">
-                    <span class="pillar-badge">Kích thích GH</span>
-                    <h5 class="pillar-title">L-Arginine 100 mg</h5>
-                    <p class="pillar-desc">Acid amin thiết yếu kích thích thùy trước tuyến yên tăng sản xuất hormone tăng trưởng chiều cao tự nhiên.</p>
-                </div>
-
-                <div class="pillar-card">
-                    <span class="pillar-badge">Hấp thu tối đa</span>
-                    <h5 class="pillar-title">Vitamin D3 800 IU</h5>
-                    <p class="pillar-desc">Cánh cổng mở đường hỗ trợ hấp thu canxi hiệu quả từ thức ăn qua thành ruột vào máu.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section: Target Audience (Đối tượng) -->
-    <section id="audience">
+    <!-- Comparison Section -->
+    <section class="comparison" id="khac-biet">
         <div class="container">
             <div class="section-header">
-                <span class="section-subtitle">Phù Hợp Mọi Lứa Tuổi</span>
-                <h2 class="section-title">Đối tượng sử dụng Midu MenaQ7 180mcg</h2>
-                <p class="section-desc">Sản phẩm được thiết kế tối ưu, an toàn tuyệt đối cho người dùng từ 1 đến 100 tuổi.</p>
+                <span class="badge badge-secondary">Tại sao nên chọn Midu?</span>
+                <h2 style="margin-top:1rem;">Sự Khác Biệt Vượt Trội Của Midu Magie Citizen</h2>
+                <p>So sánh khoa học giữa Midu Magie Citizen với các dòng sản phẩm bổ sung magie thông thường khác trên thị trường.</p>
             </div>
 
-            <div class="audience-grid">
-                <!-- Group 1: Trẻ em -->
-                <div class="audience-card">
-                    <div class="audience-header">
-                        <div class="audience-icon"><i class="fa-solid fa-child"></i></div>
-                        <h4 class="audience-title">Trẻ từ 1 - 15 tuổi</h4>
-                    </div>
-                    <div class="audience-body">
-                        <p class="section-desc">Giai đoạn vàng phát triển chiều cao của con.</p>
-                        <ul class="audience-list">
-                            <li>Trẻ thấp còi, chậm mọc răng, chậm lớn so với độ tuổi.</li>
-                            <li>Trẻ trong giai đoạn dậy thì cần bứt phá chiều cao tối đa.</li>
-                            <li>Hỗ trợ củng cố hệ xương, giúp răng chắc khỏe, ngừa sâu răng.</li>
-                        </ul>
+            <div class="comparison-table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="col-criterion">Tiêu chí so sánh</th>
+                            <th class="col-magie-citizen">MIDU MAGIE CITIZEN</th>
+                            <th class="col-ordinary-magie">Sản phẩm Magie thông thường</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="col-criterion">Gốc muối muối hóa học</td>
+                            <td class="col-magie-citizen">
+                                <div class="table-cell-check">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <span>Magie hữu cơ thế hệ mới (Magnesium Lactate Dihydrate & Magnesium Gluconate).</span>
+                                </div>
+                            </td>
+                            <td class="col-ordinary-magie">
+                                <div class="table-cell-cross">
+                                    <i class="fa-solid fa-circle-xmark"></i>
+                                    <span>Magie vô cơ rẻ tiền (Magie Oxit - MgO, Magie Carbonat - MgCO3).</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-criterion">Tỷ lệ hấp thu sinh học</td>
+                            <td class="col-magie-citizen">
+                                <div class="table-cell-check">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <span>Cực kỳ cao (>90%), được hấp thu nhanh chóng ngay khi vào ruột non, đi thẳng vào máu và tế bào.</span>
+                                </div>
+                            </td>
+                            <td class="col-ordinary-magie">
+                                <div class="table-cell-cross">
+                                    <i class="fa-solid fa-circle-xmark"></i>
+                                    <span>Rất thấp (chỉ từ 4% - 10%), phần lớn magie bị đào thải ra ngoài gây lãng phí.</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-criterion">Ảnh hưởng dạ dày & tiêu hóa</td>
+                            <td class="col-magie-citizen">
+                                <div class="table-cell-check">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <span>Rất êm dịu, không kích ứng niêm mạc dạ dày, không gây táo bón, an toàn cho trẻ từ 3 tuổi & mẹ bầu.</span>
+                                </div>
+                            </td>
+                            <td class="col-ordinary-magie">
+                                <div class="table-cell-cross">
+                                    <i class="fa-solid fa-circle-xmark"></i>
+                                    <span>Dễ gây chướng bụng, đầy hơi, thậm chí gây tiêu chảy nhẹ do muối vô cơ hút nước vào đường ruột.</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-criterion">Dạng bào chế & hương vị</td>
+                            <td class="col-magie-citizen">
+                                <div class="table-cell-check">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <span>Dạng lỏng, đóng ống 10ml tiện lợi, vị ngọt dịu thanh mát dễ uống cho cả trẻ em và người già.</span>
+                                </div>
+                            </td>
+                            <td class="col-ordinary-magie">
+                                <div class="table-cell-cross">
+                                    <i class="fa-solid fa-circle-xmark"></i>
+                                    <span>Dạng viên nén to thô, khó nuốt trôi, vị đắng kim loại hoặc bột sủi gây khó chịu.</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-criterion">Khả năng phân liều chính xác</td>
+                            <td class="col-magie-citizen">
+                                <div class="table-cell-check">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <span>Dễ dàng bẻ ống chia nhỏ 5ml cho bé 3-4 tuổi hoặc 10ml cho bé lớn hơn. Tránh nguy cơ dùng quá liều.</span>
+                                </div>
+                            </td>
+                            <td class="col-ordinary-magie">
+                                <div class="table-cell-cross">
+                                    <i class="fa-solid fa-circle-xmark"></i>
+                                    <span>Khó bẻ viên chính xác, liều lượng cố định cao thường chỉ thiết kế riêng cho người lớn.</span>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pharmacist Profile Section (Trust Builder) -->
+    <section class="profile" id="duoc-si-thieu">
+        <div class="container">
+            <div class="profile-grid">
+                <div class="profile-image-card">
+                    <!-- Using correct image from root -->
+                    <img src="./anh chan dung.jpg" alt="Chân dung Dược sĩ Đồng Thêu">
+                    <div class="profile-image-tag">
+                        <h4>Dược sĩ Đồng Thêu</h4>
+                        <p>Chuyên gia tư vấn dinh dưỡng & phát triển chiều cao xuất sắc</p>
                     </div>
                 </div>
-
-                <!-- Group 2: Mẹ bầu -->
-                <div class="audience-card">
-                    <div class="audience-header">
-                        <div class="audience-icon"><i class="fa-solid fa-person-pregnant"></i></div>
-                        <h4 class="audience-title">Phụ nữ mang thai & Cho con bú</h4>
-                    </div>
-                    <div class="audience-body">
-                        <p class="section-desc">Giúp con cao ngay từ trong bụng mẹ.</p>
-                        <ul class="audience-list">
-                            <li>Cung cấp canxi hữu cơ an toàn cho thai nhi phát triển khung xương.</li>
-                            <li>Hoàn toàn <strong>không gây nóng trong, táo bón</strong>.</li>
-                            <li>Phòng tránh tình trạng chuột rút, đau lưng, loãng xương sau sinh ở mẹ.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Group 3: Người lớn tuổi -->
-                <div class="audience-card">
-                    <div class="audience-header">
-                        <div class="audience-icon"><i class="fa-solid fa-person-cane"></i></div>
-                        <h4 class="audience-title">Người cao tuổi & Người loãng xương</h4>
-                    </div>
-                    <div class="audience-body">
-                        <p class="section-desc">Chống giòn xương, loãng xương, xốp xương.</p>
-                        <ul class="audience-list">
-                            <li>Người lớn tuổi bị suy giảm mật độ khoáng của xương.</li>
-                            <li>Giúp xương răng chắc khỏe, dẻo dai, hạn chế gãy xương.</li>
-                            <li>Phòng xơ vữa động mạch nhờ cơ chế hút canxi ra khỏi lòng mạch.</li>
-                        </ul>
+                
+                <div class="profile-content">
+                    <span class="badge badge-primary">Người Bạn Đồng Hành Của Mẹ</span>
+                    <h3 style="margin-top: 1rem;">"Tôi tin rằng mỗi đứa trẻ đều xứng đáng có giấc ngủ ngon và cơ hội bứt phá chiều cao tốt nhất!"</h3>
+                    <p class="subtitle">Lời chia sẻ từ Dược sĩ Đồng Thêu - Chủ sáng lập chuỗi tư vấn chiều cao chuẩn khoa học.</p>
+                    
+                    <div class="profile-story">
+                        <p>Chào các mẹ, tôi là <strong>Đồng Thêu (1986)</strong>. Xuất phát điểm từ vùng quê Hải Phòng thuần nông, chịu thương chịu khó, con đường đến với ngành Dược của tôi là cả một hành trình đầy thử thách. Có những lúc tôi muốn bỏ cuộc vì vừa phải chăm sóc 2 đứa con nhỏ vừa đi học và đi thực tập không lương suốt 2 năm trời, đi lại ròng rã 15km dưới trời mưa tầm tã.</p>
+                        <p>Nhưng chính sự nỗ lực không ngừng nghỉ đó đã giúp tôi thấu hiểu sâu sắc nỗi lòng của những người làm cha làm mẹ. Làm sao để chăm sóc con tốt nhất? Làm sao để con có sức khỏe nền tảng vững vàng nhất?</p>
+                        
+                        <div class="profile-quote">
+                            "Trong nhiều năm vận hành nhà thuốc, khoảnh khắc ý nghĩa nhất đối với tôi không chỉ là việc bán thuốc, mà là cuộc điện thoại lúc đêm muộn được các mẹ báo tin bé đã hạ sốt an toàn, hay tin con đã ngủ ngon giấc không còn trằn trọc quấy khóc nữa."
+                        </div>
+                        
+                        <p>Với vai trò là một chuyên gia chiều cao xuất sắc, tôi khuyên dùng <strong>Midu Magie Citizen</strong>. Đây không chỉ là một sản phẩm bổ sung Magie hữu cơ thông thường, mà đó là thành quả của triết lý dinh dưỡng chuẩn khoa học mà tôi và thương hiệu Midu MenaQ7 theo đuổi: An toàn - Hấp thu thực tế - Hiệu quả bền vững cho sự phát triển của thế hệ trẻ Việt Nam.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section: Ingredients (Thành phần chi tiết) -->
-    <section id="ingredients" class="bg-gradient-green-soft">
+    <!-- Ingredients & Specs Section -->
+    <section class="specs" id="phac-do">
         <div class="container">
             <div class="section-header">
-                <span class="section-subtitle">Minh Bạch & Khoa Học</span>
-                <h2 class="section-title">Thành phần dinh dưỡng trong 10 ml dung dịch</h2>
-                <p class="section-desc">Công thức vàng kết hợp các dưỡng chất thiết yếu theo tỷ lệ hoàn hảo đã được kiểm định nghiêm ngặt.</p>
+                <span class="badge badge-accent">Bảng Thành Phần Lâm Sàng</span>
+                <h2 style="margin-top:1rem;">Hàm Lượng Vàng Trong Mỗi Ống 10ml</h2>
+                <p>Công thức tinh khiết, tập trung tối đa vào việc giải phóng Magie nguyên tố hữu cơ kết hợp Vitamin B6 tạo sinh khả dụng cao nhất.</p>
             </div>
-
-            <div class="ingredients-box">
-                <div class="ingredients-flex">
-                    <!-- Row 1: Calci -->
-                    <div class="ingredient-row">
-                        <div class="ingredient-name">
-                            <span class="ingredient-name-text">Calci Glucoheptonate</span>
-                            <span class="ingredient-qty">1100 mg</span>
-                        </div>
-                        <div class="ingredient-role">
-                            Dạng canxi hữu cơ hòa tan cao nhất hiện nay, hấp thu trực tiếp nhanh chóng tại ruột, <strong>không gây lắng đọng tạo sỏi thận</strong>, không gây táo bón.
+            
+            <div class="specs-grid">
+                <div class="ingredients-list">
+                    <div class="ingredient-card">
+                        <div class="ingredient-icon"><i class="fa-solid fa-flask"></i></div>
+                        <div class="ingredient-info">
+                            <h4>Magnesium Lactate Dihydrate (762,0 mg)</h4>
+                            <p>Tương đương <strong>76,84 mg</strong> nguyên tố Magie hữu cơ.</p>
+                            <span>Dạng muối hữu cơ của axit lactic, cực kỳ hòa tan và thân thiện với niêm mạc ruột của trẻ nhỏ.</span>
                         </div>
                     </div>
-
-                    <!-- Row 2: MenaQ7 -->
-                    <div class="ingredient-row">
-                        <div class="ingredient-name">
-                            <span class="ingredient-name-text">MenaQ7 (Vitamin K2 - MK7)</span>
-                            <span class="ingredient-qty">180 mcg</span>
-                        </div>
-                        <div class="ingredient-role">
-                            Hàm lượng 180mcg cao vượt trội. Nhập khẩu trực tiếp từ NattoPharma Na Uy - thương hiệu duy nhất được nghiên cứu và chứng minh lâm sàng có hiệu quả gắn canxi vào xương tuyệt đối.
+                    
+                    <div class="ingredient-card">
+                        <div class="ingredient-icon"><i class="fa-solid fa-vial"></i></div>
+                        <div class="ingredient-info">
+                            <h4>Magnesium Gluconate (400,0 mg)</h4>
+                            <p>Tương đương <strong>23,18 mg</strong> nguyên tố Magie hữu cơ.</p>
+                            <span>Muối gluconat bổ sung sự ổn định điện giải tế bào, bảo vệ dạ dày khỏi mọi kích ứng và đầy hơi.</span>
                         </div>
                     </div>
-
-                    <!-- Row 3: D3 -->
-                    <div class="ingredient-row">
-                        <div class="ingredient-name">
-                            <span class="ingredient-name-text">Vitamin D3 (Colecalciferol)</span>
-                            <span class="ingredient-qty">800 IU</span>
-                        </div>
-                        <div class="ingredient-role">
-                            Dẫn truyền canxi qua thành ruột vào máu. Hàm lượng 800 IU tối ưu đáp ứng tốt nhu cầu dinh dưỡng hàng ngày của cơ thể.
+                    
+                    <div class="ingredient-card">
+                        <div class="ingredient-icon"><i class="fa-solid fa-droplet"></i></div>
+                        <div class="ingredient-info">
+                            <h4>Vitamin B6 (1,5 mg)</h4>
+                            <p>Đóng vai trò là <strong>Coenzyme</strong> xúc tác.</p>
+                            <span>Nhân tố bắt buộc giúp liên kết và vận chuyển các ion Magie vượt qua màng tế bào cơ và tế bào thần kinh hiệu quả gấp 2 lần.</span>
                         </div>
                     </div>
-
-                    <!-- Row 4: L-Arginine -->
-                    <div class="ingredient-row">
-                        <div class="ingredient-name">
-                            <span class="ingredient-name-text">L-Arginine HCl</span>
-                            <span class="ingredient-qty">100 mg</span>
+                </div>
+                
+                <div class="dosage-card">
+                    <h3><i class="fa-solid fa-circle-info"></i> Phác Đồ Sử Dụng Chuẩn Y Khoa</h3>
+                    <p style="margin-bottom: 2rem; opacity: 0.85; font-size: 0.95rem;">Uống trực tiếp hoặc pha loãng vào nước lọc/sữa/cháo của bé. Lắc đều ống trước khi sử dụng. Nên uống sau ăn (ưu tiên buổi chiều/tối để giúp ngủ ngon).</p>
+                    
+                    <div class="dosage-list">
+                        <div class="dosage-item">
+                            <div class="dosage-number">1</div>
+                            <div class="dosage-text">
+                                <h4>Trẻ em từ 3 đến 4 tuổi</h4>
+                                <p>Uống <strong>5 ml (1/2 ống)</strong> mỗi ngày. Uống 1 lần/ngày.</p>
+                            </div>
                         </div>
-                        <div class="ingredient-role">
-                            Axit amin quan trọng kích thích giải phóng hormone tăng trưởng tự nhiên của cơ thể, hỗ trợ sự phát triển của sụn và xương dài ra nhanh hơn.
+                        <div class="dosage-item">
+                            <div class="dosage-number">2</div>
+                            <div class="dosage-text">
+                                <h4>Trẻ em từ 4 đến 9 tuổi</h4>
+                                <p>Uống <strong>10 ml (1 ống)</strong> mỗi ngày. Uống 1 lần/ngày.</p>
+                            </div>
                         </div>
-                    </div>
-
-                    <!-- Row 5: Magnesi gluconat -->
-                    <div class="ingredient-row">
-                        <div class="ingredient-name">
-                            <span class="ingredient-name-text">Magnesi Gluconat</span>
-                            <span class="ingredient-qty">200 mg</span>
-                        </div>
-                        <div class="ingredient-role">
-                            Giúp ổn định hệ thần kinh, tăng mật độ khoáng chất xương, nâng cao hiệu quả tổng hợp canxi trong cơ thể.
-                        </div>
-                    </div>
-
-                    <!-- Row 6: B6, PP -->
-                    <div class="ingredient-row">
-                        <div class="ingredient-name">
-                            <span class="ingredient-name-text">Vitamin PP & Vitamin B6</span>
-                            <span class="ingredient-qty">43 mg</span>
-                        </div>
-                        <div class="ingredient-role">
-                            Gồm Vitamin PP (40 mg) và Vitamin B6 (3 mg). Giúp nâng cao khả năng hấp thụ các dưỡng chất, cải thiện hệ tiêu hóa khỏe mạnh.
+                        <div class="dosage-item">
+                            <div class="dosage-number">3</div>
+                            <div class="dosage-text">
+                                <h4>Trẻ từ 9 tuổi, Người lớn, Phụ nữ có thai & Cho con bú</h4>
+                                <p>Uống <strong>10 ml (1 ống) / lần</strong>. Uống ngày 2 lần (Tổng 20 ml/ngày).</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1970,66 +2113,54 @@
         </div>
     </section>
 
-    <!-- Section: Testimonials (Đánh giá) -->
-    <section id="testimonials">
+    <!-- Testimonials Section -->
+    <section class="testimonials">
         <div class="container">
             <div class="section-header">
-                <span class="section-subtitle">Khách Hàng Nói Gì</span>
-                <h2 class="section-title">Hàng nghìn gia đình đã tin dùng</h2>
-                <p class="section-desc">Lắng nghe chia sẻ thực tế từ các ông bố, bà mẹ và người dùng trên toàn quốc.</p>
+                <span class="badge badge-primary">Phản Hồi Thực Tế</span>
+                <h2 style="margin-top:1rem;">Câu Chuyện Từ Những Người Mẹ Đã Thay Đổi</h2>
+                <p>Hơn 5.409+ khách hàng đã tin tưởng lựa chọn Midu Magie Citizen và nhận được kết quả vượt mong đợi.</p>
             </div>
-
+            
             <div class="testimonials-grid">
-                <!-- Testimonial 1 -->
                 <div class="testimonial-card">
-                    <i class="fa-solid fa-quote-right quote-icon"></i>
                     <div class="stars">
                         <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                     </div>
-                    <p class="testimonial-text">
-                        "Bé Bin nhà mình 7 tuổi trước đây lùn hơn bạn cùng trang lứa rất nhiều. Nhờ được tư vấn dùng Midu MenaQ7 180mcg, sau 2 liệu trình con tăng được 5cm chiều cao, người rắn rỏi hẳn. Trộm vía dạng ống nước ngọt thanh bé rất thích uống, hoàn toàn không bị táo bón như canxi viên trước đây."
-                    </p>
-                    <div class="reviewer-info">
-                        <div class="reviewer-avatar">LA</div>
-                        <div class="reviewer-details">
-                            <h5>Mẹ Lan Anh</h5>
-                            <p>Hà Nội (Mẹ bé Bin 7 tuổi)</p>
+                    <p>"Bé Bo nhà mình 4 tuổi, đêm nào ngủ cũng trằn trọc, xoay người liên tục rồi khóc ré lên làm cả nhà mất ngủ theo. Khám dinh dưỡng bác sĩ bảo thiếu magie. Mình mua 2 hộp Magie Citizen của dược sĩ Thêu, vị ngọt bé rất thích uống. Trộm vía uống được 1 tuần con ngủ êm ru từ tối đến sáng, không quấy khóc gì nữa!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">LT</div>
+                        <div class="author-info">
+                            <h4>Mẹ Lan Thư</h4>
+                            <p>Hải Phòng · Con 4 tuổi</p>
                         </div>
                     </div>
                 </div>
-
-                <!-- Testimonial 2 -->
+                
                 <div class="testimonial-card">
-                    <i class="fa-solid fa-quote-right quote-icon"></i>
                     <div class="stars">
                         <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                     </div>
-                    <p class="testimonial-text">
-                        "Đợt mang thai bé thứ hai mình bị chuột rút thường xuyên đêm không ngủ nổi, uống canxi ngoài hiệu thuốc thì bị táo bón kinh khủng. Chuyển sang Midu MenaQ7 180mcg này thấy nhẹ nhõm hẳn, chuột rút hết sạch, đi vệ sinh bình thường. Bác sĩ siêu âm khen chiều dài xương đùi bé vượt chuẩn."
-                    </p>
-                    <div class="reviewer-info">
-                        <div class="reviewer-avatar">MP</div>
-                        <div class="reviewer-details">
-                            <h5>Chị Mai Phương</h5>
-                            <p>Hải Phòng (Mẹ bầu 7 tháng)</p>
+                    <p>"Mình mang bầu tháng thứ 7, đêm nào cũng bị chuột rút cứng đơ cả bắp chân, đau phát khóc, lại còn mất ngủ triền miên. Bác sĩ bảo bầu cần bổ sung thêm magie. Uống dạng viên thì mình bị táo bón nặng. Đổi sang ống nước Magie Citizen này đúng là cứu tinh. Uống êm bụng cực kỳ, hết sạch chuột rút mà ngủ cũng sâu giấc hơn."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">QD</div>
+                        <div class="author-info">
+                            <h4>Mẹ Quỳnh Dao</h4>
+                            <p>Hà Nội · Bầu 7 tháng</p>
                         </div>
                     </div>
                 </div>
-
-                <!-- Testimonial 3 -->
+                
                 <div class="testimonial-card">
-                    <i class="fa-solid fa-quote-right quote-icon"></i>
                     <div class="stars">
                         <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                     </div>
-                    <p class="testimonial-text">
-                        "Tôi năm nay 65 tuổi, bị loãng xương nên thường xuyên đau nhức mỏi lưng gối, đi lại khó khăn. Con gái mua cho hộp Midu MenaQ7 uống. Uống đều đặn thấy người khỏe khoắn, xương khớp dẻo dai hơn, không còn nhức mỏi nhiều khi trái gió trở trời nữa. Rất an tâm vì canxi hữu cơ không hại thận."
-                    </p>
-                    <div class="reviewer-info">
-                        <div class="reviewer-avatar">MH</div>
-                        <div class="reviewer-details">
-                            <h5>Bác Minh Hùng</h5>
-                            <p>TP. Hồ Chí Minh (65 tuổi)</p>
+                    <p>"Con em 8 tuổi, chiều cao hơi thấp so với chuẩn WHO. Em cho uống Canxi với D3K2 mãi mà con tăng chậm, lại hay kêu mỏi chân tay buổi tối. Hỏi dược sĩ Thêu thì được giải thích do thiếu Magie nên Canxi không hấp thu hết được. Em kết hợp thêm Magie Citizen này cho bé uống, trộm vía bé khỏe mạnh, hết mỏi chân và chiều cao bắt đầu bứt phá trông thấy."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AT</div>
+                        <div class="author-info">
+                            <h4>Mẹ Anh Thư</h4>
+                            <p>TP. Hồ Chí Minh · Con 8 tuổi</p>
                         </div>
                     </div>
                 </div>
@@ -2037,251 +2168,205 @@
         </div>
     </section>
 
-    <!-- Section: Pricing & Countdown (Báo giá & ưu đãi) -->
-    <section id="pricing" class="pricing-section">
+    <!-- Pricing & Order Section -->
+    <section class="pricing" id="dat-mua">
         <div class="container">
             <div class="section-header">
-                <span class="section-subtitle">Chương Trình Khuyến Mãi</span>
-                <h2 class="section-title">Ưu đãi độc quyền hôm nay</h2>
-                <p class="section-desc">Cơ hội vàng giúp con bứt phá chiều cao với mức chi phí tiết kiệm nhất.</p>
-            </div>
-
-            <!-- Countdown Timer -->
-            <div class="countdown-container">
-                <div class="countdown-title">
-                    <i class="fa-solid fa-clock"></i> Ưu đãi giới hạn chỉ áp dụng trong ngày hôm nay!
-                </div>
-                <div class="countdown-timer">
-                    <div class="time-box">
-                        <span class="time-num" id="hours">01</span>
-                        <span class="time-label">Giờ</span>
-                    </div>
-                    <div class="time-box">
-                        <span class="time-num" id="minutes">45</span>
-                        <span class="time-label">Phút</span>
-                    </div>
-                    <div class="time-box">
-                        <span class="time-num" id="seconds">30</span>
-                        <span class="time-label">Giây</span>
-                    </div>
-                </div>
+                <span class="badge badge-midu">Ưu đãi độc quyền hôm nay</span>
+                <h2 style="margin-top:1rem;">Chọn Gói Liệu Trình Tối Ưu Cho Bé</h2>
+                <p>Đăng ký mua ngay hôm nay để nhận mức giá ưu đãi tốt nhất và các phần quà đi kèm hấp dẫn của Dược sĩ Đồng Thêu.</p>
             </div>
 
             <!-- Pricing Grid -->
-            <div class="pricing-grid">
+            <div class="combo-grid">
                 <!-- Combo 1 -->
-                <div class="price-card">
-                    <h4 class="price-name">Combo Trải Nghiệm</h4>
-                    <p class="price-tubes">Hộp 30 ống dung dịch uống</p>
-                    <div class="price-box">
-                        <span class="original-price">450.000đ</span>
-                        <span class="promo-price">420.000đ<span>/Hộp</span></span>
+                <div class="combo-card">
+                    <div class="combo-header">
+                        <h3>Combo 1 Hộp Trải Nghiệm</h3>
+                        <div class="combo-qty">Hộp 30 ống x 10ml</div>
                     </div>
-                    <ul class="price-benefits">
-                        <li>Bổ sung canxi đầy đủ trong 30 ngày</li>
-                        <li>Được kiểm chứng độ lành tính, không táo</li>
-                        <li>Phù hợp cho bé uống thử hương vị</li>
-                        <li>Miễn phí giao hàng toàn quốc</li>
+                    <div class="price-box">
+                        <span class="current">225.000đ</span>
+                    </div>
+                    <ul class="combo-features">
+                        <li>Liệu trình dùng thử trong 15-30 ngày</li>
+                        <li>Bổ sung hàm lượng magie hữu cơ sạch</li>
+                        <li>Phí vận chuyển toàn quốc: 30.000đ</li>
                     </ul>
-                    <button class="price-btn" onclick="selectPackage(1)">Đặt Chọn Combo này</button>
+                    <button class="btn btn-secondary" onclick="selectCombo('combo1')">Chọn Gói Này</button>
                 </div>
 
-                <!-- Combo 3 (Popular) -->
-                <div class="price-card popular">
-                    <div class="card-ribbon">Khuyên Dùng - Bán Chạy Nhất</div>
-                    <h4 class="price-name">Combo Tăng Trưởng Vàng (3 Hộp)</h4>
-                    <p class="price-tubes">Đủ 1 liệu trình chuẩn 3 tháng</p>
-                    <div class="price-box">
-                        <span class="original-price">1.350.000đ</span>
-                        <span class="promo-price">1.260.000đ<span>/3 Hộp</span></span>
+                <!-- Combo 2 (Popular) -->
+                <div class="combo-card popular">
+                    <div class="popular-badge">Khuyên dùng cho bé</div>
+                    <div class="combo-header">
+                        <h3>Combo 2 Hộp Ngủ Ngon Sâu Giấc</h3>
+                        <div class="combo-qty">Hộp 60 ống x 10ml</div>
                     </div>
-                    <ul class="price-benefits">
-                        <li><strong>Tiết kiệm ngay 90.000đ</strong></li>
-                        <li>Đủ 1 liệu trình chuẩn phát triển chiều cao</li>
-                        <li>Tặng cẩm nang phát triển chiều cao từ chuyên gia</li>
-                        <li>Miễn phí giao hàng nhanh toàn quốc</li>
-                        <li>Được Dược sĩ đồng hành tư vấn suốt quá trình</li>
+                    <div class="price-box">
+                        <span class="old">480.000đ</span>
+                        <span class="current">450.000đ</span>
+                    </div>
+                    <ul class="combo-features">
+                        <li><strong>MIỄN PHÍ VẬN CHUYỂN</strong> toàn quốc</li>
+                        <li>Liệu trình chuẩn giúp bé ngủ sâu giấc</li>
+                        <li>Tặng cẩm nang "Phác đồ 6 bước tăng chiều cao"</li>
+                        <li>Dược sĩ Đồng Thêu đồng hành theo dõi</li>
                     </ul>
-                    <button class="price-btn" onclick="selectPackage(2)">Đặt Chọn Combo này</button>
+                    <button class="btn btn-primary" onclick="selectCombo('combo2')">Chọn Gói Này</button>
                 </div>
 
-                <!-- Combo 6 -->
-                <div class="price-card">
-                    <h4 class="price-name">Combo Cao Lớn Vượt Trội (6 Hộp)</h4>
-                    <p class="price-tubes">Nhận ngay 7 hộp (Mua 6 tặng 1)</p>
-                    <div class="price-box">
-                        <span class="original-price">2.700.000đ</span>
-                        <span class="promo-price">2.520.000đ<span>/6 Hộp</span></span>
+                <!-- Combo 3 -->
+                <div class="combo-card">
+                    <div class="combo-header">
+                        <h3>Combo 4 Hộp Bứt Phá Chiều Cao</h3>
+                        <div class="combo-qty">Hộp 120 ống x 10ml</div>
                     </div>
-                    <ul class="price-benefits">
-                        <li><strong>Tiết kiệm đến 630.000đ</strong></li>
-                        <li>Tặng ngay 1 hộp Midu MenaQ7 180mcg</li>
-                        <li>Đảm bảo con bứt phá chiều cao rõ rệt</li>
-                        <li>Tặng thước đo chiều cao dán tường xinh xắn</li>
-                        <li>Miễn phí giao hàng nhanh hỏa tốc</li>
+                    <div class="price-box">
+                        <span class="old">960.000đ</span>
+                        <span class="current" style="color: var(--primary);">850.000đ</span>
+                    </div>
+                    <ul class="combo-features">
+                        <li><strong>TIẾT KIỆM 110.000Đ</strong> so với mua lẻ</li>
+                        <li><strong>MIỄN PHÍ VẬN CHUYỂN</strong> toàn quốc</li>
+                        <li>Tặng cẩm nang dinh dưỡng cao cấp</li>
+                        <li>Tặng 1 Thước đo chiều cao Midu chuẩn</li>
                     </ul>
-                    <button class="price-btn" onclick="selectPackage(3)">Đặt Chọn Combo này</button>
+                    <button class="btn btn-secondary" onclick="selectCombo('combo3')">Chọn Gói Này</button>
                 </div>
             </div>
 
-            <!-- Order Section Form -->
-            <div class="order-container" id="order-section">
-                <div class="order-info">
-                    <span class="section-subtitle">Đăng Ký Mua</span>
-                    <h3>Đặt hàng chính hãng nhận ưu đãi giảm giá</h3>
-                    <p>Hãy để lại thông tin chính xác. Đội ngũ Dược sĩ chuyên môn của Midu MenaQ7 sẽ liên hệ xác nhận đơn hàng và tư vấn liệu trình phù hợp nhất cho gia đình bạn.</p>
+            <!-- Order Container and Form -->
+            <div class="order-container-box" id="order-section">
+                <div class="order-form-wrapper">
+                    <h3>Thông Tin Đặt Hàng</h3>
+                    <p>Vui lòng điền chính xác thông tin bên dưới, Dược sĩ của chúng tôi sẽ gọi điện xác nhận đơn hàng và tư vấn liệu trình cụ thể cho bé trong 15-30 phút.</p>
                     
-                    <div class="order-badges">
-                        <div class="order-badge-item">
-                            <div class="order-badge-icon"><i class="fa-solid fa-truck-fast"></i></div>
-                            <div class="order-badge-text">
-                                <h6>Giao Hàng Miễn Phí</h6>
-                                <p>Nhận hàng kiểm tra thanh toán</p>
-                            </div>
-                        </div>
-
-                        <div class="order-badge-item">
-                            <div class="order-badge-icon"><i class="fa-solid fa-shield-check"></i></div>
-                            <div class="order-badge-text">
-                                <h6>Chính Hãng 100%</h6>
-                                <p>Đầy đủ tem chống giả Bộ Công An</p>
-                            </div>
-                        </div>
-
-                        <div class="order-badge-item">
-                            <div class="order-badge-icon"><i class="fa-solid fa-user-doctor"></i></div>
-                            <div class="order-badge-text">
-                                <h6>Tư Vấn Chuyên Sâu</h6>
-                                <p>Hỗ trợ bởi Dược sĩ giàu kinh nghiệm</p>
-                            </div>
-                        </div>
-
-                        <div class="order-badge-item">
-                            <div class="order-badge-icon"><i class="fa-solid fa-rotate-left"></i></div>
-                            <div class="order-badge-text">
-                                <h6>Đổi Trả Dễ Dàng</h6>
-                                <p>Đổi mới miễn phí nếu lỗi vận chuyển</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="order-form-box">
                     <form id="orderForm" onsubmit="handleOrderSubmit(event)">
                         <div class="form-group">
-                            <label for="fullName">Họ và tên khách hàng *</label>
-                            <input type="text" id="fullName" class="form-control" placeholder="Nhập họ tên của bạn..." required>
+                            <label class="form-label" for="fullName">Họ và tên phụ huynh *</label>
+                            <input class="form-input" type="text" id="fullName" placeholder="Ví dụ: Nguyễn Thị Lan" required>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label" for="phoneNumber">Số điện thoại liên hệ *</label>
+                                <input class="form-input" type="tel" id="phoneNumber" placeholder="Ví dụ: 0987654321" required>
+                            </div>
                         </div>
 
                         <div class="form-group">
-                            <label for="phoneNumber">Số điện thoại liên hệ *</label>
-                            <input type="tel" id="phoneNumber" class="form-control" placeholder="Nhập số điện thoại liên hệ..." required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="packageSelect">Chọn gói sản phẩm ưu đãi *</label>
-                            <select id="packageSelect" class="form-control form-select" required>
-                                <option value="" disabled selected>-- Vui lòng chọn gói combo --</option>
-                                <option value="combo1">Combo Trải Nghiệm (1 Hộp) - 420.000đ</option>
-                                <option value="combo3">Combo Tăng Trưởng Vàng (3 Hộp) - 1.260.000đ (Bán chạy nhất)</option>
-                                <option value="combo6">Combo Cao Lớn Vượt Trội (6 Hộp) - 2.520.000đ (Tặng 1 Hộp)</option>
-                                <option value="consult">Chưa mua, đăng ký nhận tư vấn chiều cao miễn phí</option>
+                            <label class="form-label" for="comboSelect">Chọn gói Combo ưu đãi *</label>
+                            <select class="form-input form-select" id="comboSelect" onchange="calculateOrderTotal()" required>
+                                <option value="combo1">Combo 1 Hộp Trải Nghiệm — 225.000đ</option>
+                                <option value="combo2" selected>Combo 2 Hộp Ngủ Ngon Sâu Giấc — 450.000đ (Free Ship + Quà)</option>
+                                <option value="combo3">Combo 4 Hộp Bứt Phá Chiều Cao — 850.000đ (Free Ship + Quà)</option>
+                                <option value="consult">Đăng ký nhận cuộc gọi tư vấn miễn phí từ Dược sĩ</option>
                             </select>
                         </div>
 
                         <div class="form-group">
-                            <label for="address">Địa chỉ giao nhận hàng *</label>
-                            <input type="text" id="address" class="form-control" placeholder="Nhập địa chỉ giao hàng chi tiết..." required>
+                            <label class="form-label" for="address">Địa chỉ nhận hàng (Bỏ trống nếu chỉ đăng ký tư vấn) *</label>
+                            <input class="form-input" type="text" id="address" placeholder="Số nhà, tên đường, phường/xã, quận/huyện, tỉnh/thành phố">
                         </div>
 
                         <div class="form-group">
-                            <label for="notes">Ghi chú thêm (Độ tuổi của bé, mong muốn tăng chiều cao,...)</label>
-                            <textarea id="notes" class="form-control" rows="3" placeholder="Nhập độ tuổi của con để Dược sĩ tư vấn cụ thể..."></textarea>
+                            <label class="form-label" for="notes">Ghi chú thêm (Độ tuổi của bé, tình trạng của con...)</label>
+                            <input class="form-input" type="text" id="notes" placeholder="Ví dụ: Bé 4 tuổi ngủ hay giật mình, ra mồ hôi trộm...">
                         </div>
 
-                        <button type="submit" class="form-submit-btn">
-                            <i class="fa-solid fa-cart-arrow-down"></i> GỬI ĐĂNG KÝ NGAY
-                        </button>
-                        
-                        <p class="form-note">(*) Thông tin của bạn được cam kết bảo mật an toàn 100%.</p>
+                        <button type="submit" class="btn btn-midu" style="width: 100%; margin-top: 1rem;">Xác Nhận Đăng Ký Ngay</button>
                     </form>
+                </div>
+
+                <div class="order-summary-card">
+                    <div>
+                        <div class="summary-header">
+                            <h4>Chi Tiết Đơn Hàng</h4>
+                        </div>
+                        <div class="summary-details">
+                            <div class="summary-line">
+                                <span id="summaryComboName">Combo 2 Hộp Ngủ Ngon Sâu Giấc</span>
+                                <span id="summaryComboBasePrice">450.000đ</span>
+                            </div>
+                            <div class="summary-line">
+                                <span>Phí vận chuyển:</span>
+                                <span id="summaryShippingPrice">Miễn phí</span>
+                            </div>
+                            <div class="summary-line">
+                                <span>Ưu đãi giảm giá:</span>
+                                <span id="summaryDiscountPrice">-30.000đ</span>
+                            </div>
+                            <div class="summary-line total">
+                                <span>TỔNG THANH TOÁN:</span>
+                                <span id="summaryTotalPrice">450.000đ</span>
+                            </div>
+                        </div>
+
+                        <div class="order-gifts-box" id="giftsBox">
+                            <h5><i class="fa-solid fa-gift"></i> Quà tặng kèm Combo:</h5>
+                            <p id="giftsContent">✓ Miễn phí giao hàng toàn quốc.<br>✓ Tặng cẩm nang "Phác đồ 6 bước tăng chiều cao chuẩn khoa học của DS Đồng Thêu".<br>✓ Hỗ trợ theo dõi phác đồ định kỳ trực tiếp từ Dược sĩ Đồng Thêu.</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="trust-seals">
+                            <span><i class="fa-solid fa-circle-check"></i> Kiểm tra trước khi nhận</span>
+                            <span><i class="fa-solid fa-certificate"></i> Chính hãng 100%</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section: FAQ (Câu hỏi thường gặp) -->
-    <section id="faq">
+    <!-- FAQ Section -->
+    <section class="faq">
         <div class="container">
             <div class="section-header">
-                <span class="section-subtitle">Giải Đáp Thắc Mắc</span>
-                <h2 class="section-title">Câu hỏi thường gặp</h2>
-                <p class="section-desc">Tổng hợp những câu hỏi thắc mắc phổ biến nhất từ người tiêu dùng.</p>
+                <span class="badge badge-primary">Giải Đáp Thắc Mắc</span>
+                <h2 style="margin-top:1rem;">Câu Hỏi Thường Gặp</h2>
+                <p>Những giải đáp y khoa từ Dược sĩ Đồng Thêu về việc bổ sung Magie cho trẻ nhỏ và mẹ bầu.</p>
             </div>
-
-            <div class="faq-grid">
-                <!-- FAQ 1 -->
+            
+            <div class="faq-accordion">
                 <div class="faq-item">
                     <div class="faq-question" onclick="toggleFaq(this)">
-                        <span>Trẻ uống Midu MenaQ7 180mcg bao lâu thì có hiệu quả tăng chiều cao?</span>
-                        <i class="fa-solid fa-chevron-down faq-icon-arrow"></i>
+                        <span>1. Tại sao con tôi đang uống Canxi và D3K2 rất đều đặn vẫn cần uống thêm Magie?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        <div class="faq-answer-inner">
-                            Theo nghiên cứu lâm sàng, chu kỳ tái tạo xương cần từ 3 - 6 tháng. Thông thường sau khi sử dụng đều đặn từ 2 - 3 tháng (tương đương 1 liệu trình 3 hộp), phụ huynh sẽ nhận thấy con bắt đầu cứng cáp hơn, ngủ sâu giấc hơn và cải thiện chiều cao rõ rệt từ 2 - 5 cm tùy cơ địa và độ tuổi của bé.
-                        </div>
+                        Canxi, Vitamin D3 và K2 là các yếu tố cốt lõi của xương. Tuy nhiên, Magie chính là "chìa khóa sinh học" để kích hoạt và điều hòa các phản ứng chuyển hóa này. Magie giúp cơ thể chuyển hóa Vitamin D3 từ dạng không hoạt động sang dạng hoạt động. Nếu thiếu Magie, canxi nạp vào sẽ không thể đi vào xương mà bị lắng đọng tại ruột gây táo bón, lắng đọng tại thận gây sỏi thận. Bổ sung Magie Citizen giúp hoàn thiện chu trình hấp thu canxi tối đa cho xương bé dài ra nhanh hơn.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>2. Bé uống Magie Citizen vào thời điểm nào trong ngày là tốt nhất?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Nên cho bé uống Midu Magie Citizen sau bữa ăn chính khoảng 30 phút. Thời điểm tốt nhất là vào **buổi chiều hoặc buổi tối**. Magie có tác dụng làm dịu hệ thần kinh trung ương và thư giãn cơ bắp, uống vào thời gian này sẽ giúp con có một giấc ngủ rất sâu, ngon giấc và tránh tình trạng quấy khóc ban đêm.
                     </div>
                 </div>
 
-                <!-- FAQ 2 -->
                 <div class="faq-item">
                     <div class="faq-question" onclick="toggleFaq(this)">
-                        <span>Sản phẩm này có thực sự không gây nóng trong hay táo bón như quảng cáo?</span>
-                        <i class="fa-solid fa-chevron-down faq-icon-arrow"></i>
+                        <span>3. Sản phẩm Magie Citizen có gây tác dụng phụ táo bón hay tiêu chảy không?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        <div class="faq-answer-inner">
-                            Hoàn toàn chính xác! Midu MenaQ7 180mcg sử dụng dòng Canxi hữu cơ Glucoheptonate thế hệ mới, có độ hòa tan cực kỳ cao kết hợp cùng Vitamin K2 dạng MenaQ7. Nhờ vậy, canxi được vận chuyển nhanh chóng vào xương, không bị dư thừa hay lắng đọng ở ruột non. Do đó, sản phẩm vô cùng mát và tuyệt đối không gây ra tình trạng nóng trong hay táo bón, cực kỳ an toàn cho bé và mẹ bầu.
-                        </div>
+                        Hoàn toàn không. Tác dụng phụ như đầy bụng, tiêu chảy hay táo bón thường chỉ xảy ra ở các sản phẩm chứa Magie vô cơ (Magie Oxit, Magie Carbonat) do tỷ lệ hấp thu kém và tính hút nước cao ở đại tràng. Midu Magie Citizen sử dụng dạng **Magie hữu cơ (Lactate & Gluconat)** cao cấp có độ hòa tan tuyệt đối, hấp thu êm dịu tại ruột non, không gây áp lực lên dạ dày của trẻ em và mẹ bầu. Ngược lại, Magie hữu cơ còn hỗ trợ nhuận tràng nhẹ, rất tốt cho các bé đang bị táo bón nhẹ.
                     </div>
                 </div>
 
-                <!-- FAQ 3 -->
                 <div class="faq-item">
                     <div class="faq-question" onclick="toggleFaq(this)">
-                        <span>Mẹ bầu dùng Midu MenaQ7 180mcg có lợi ích gì đặc biệt?</span>
-                        <i class="fa-solid fa-chevron-down faq-icon-arrow"></i>
+                        <span>4. Trẻ em dưới 3 tuổi có uống được Midu Magie Citizen không?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        <div class="faq-answer-inner">
-                            Trong giai đoạn thai kỳ, nhu cầu canxi của mẹ bầu tăng đột biến để xây dựng hệ xương cho thai nhi. Midu MenaQ7 giúp mẹ bầu hấp thu trọn vẹn canxi mà không sợ bị tiểu đường thai kỳ (do không có đường sinh năng lượng), không lo táo bón. Đặc biệt, Vitamin K2 MenaQ7 giúp dẫn canxi qua nhau thai trực tiếp đi thẳng vào hệ xương của bé, giúp con sinh ra có chiều dài đùi vượt chuẩn và mẹ bầu không lo đau lưng hay chuột rút.
-                        </div>
-                    </div>
-                </div>
-
-                <!-- FAQ 4 -->
-                <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFaq(this)">
-                        <span>Tại sao giá của Midu MenaQ7 lại cao hơn các loại canxi thông thường ngoài hiệu thuốc?</span>
-                        <i class="fa-solid fa-chevron-down faq-icon-arrow"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <div class="faq-answer-inner">
-                            Sản phẩm sở hữu hàm lượng Vitamin K2 MenaQ7 cao vượt trội (180 mcg), là dòng K2 đắt đỏ nhất thế giới được nhập khẩu trực tiếp từ NattoPharma - Na Uy và được chứng minh lâm sàng về độ hiệu quả. Bên cạnh đó, canxi trong sản phẩm là canxi hữu cơ Glucoheptonate chất lượng cao chứ không phải canxi vô cơ rẻ tiền (calci cacbonat). Sự kết hợp đắt giá này đem đến khả năng tăng trưởng chiều cao vượt trội mà không gây bất cứ tác dụng phụ nào, tiết kiệm thời gian và chi phí bồi bổ lâu dài cho con.
-                        </div>
-                    </div>
-                </div>
-
-                <!-- FAQ 5 -->
-                <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFaq(this)">
-                        <span>Người cao tuổi có dùng được sản phẩm này không? Có tương tác gì không?</span>
-                        <i class="fa-solid fa-chevron-down faq-icon-arrow"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <div class="faq-answer-inner">
-                            Người cao tuổi dùng Midu MenaQ7 180mcg cực kỳ tốt. Vitamin K2 MenaQ7 giúp dọn dẹp các canxi thừa bám ở mảng xơ vữa thành mạch máu để đưa vào xương, từ đó giúp bảo vệ hệ tim mạch khỏe mạnh và phòng chống loãng xương hiệu quả. Sản phẩm an toàn, không làm tăng huyết áp hay đường huyết, người cao tuổi có bệnh lý nền hoàn toàn yên tâm sử dụng hàng ngày.
-                        </div>
+                        Theo công bố chính thức, đối tượng sử dụng được khuyến cáo là trẻ từ 3 tuổi trở lên. Đối với trẻ dưới 3 tuổi, nếu con có các biểu hiện quấy khóc đêm nghiêm trọng, rụng tóc hình vành khăn hoặc mồ hôi trộm nặng, các mẹ vui lòng chọn mục **"Đăng ký tư vấn miễn phí"** trên form đặt hàng. Dược sĩ Đồng Thêu sẽ liên hệ trực tiếp để phân tích hồ sơ dinh dưỡng của bé và đưa ra hướng dẫn sử dụng an toàn, phù hợp nhất.
                     </div>
                 </div>
             </div>
@@ -2292,69 +2377,73 @@
     <footer>
         <div class="container">
             <div class="footer-grid">
-                <div>
-                    <a href="#" class="footer-logo">
-                        <i class="fa-solid fa-droplet"></i> Midu <span>MenaQ7</span>
-                    </a>
-                    <p style="line-height: 1.7; margin-bottom: 1.5rem;">Midu MenaQ7 là thương hiệu uy tín hàng đầu trong lĩnh vực nghiên cứu và chăm sóc sức khỏe chiều cao trẻ em Việt Nam, mang đến giải pháp phát triển xương vững chắc toàn diện.</p>
-                    <p style="font-size: 0.8rem;">© 2026 Midu MenaQ7 180mcg. All rights reserved.</p>
+                <div class="footer-col">
+                    <span class="logo-text" style="color: white; font-size: 1.6rem; display: block; margin-bottom: 1rem;">Midu MenaQ7</span>
+                    <p>Thương hiệu hàng đầu Việt Nam cung cấp giải pháp bứt phá chiều cao chuẩn y khoa cho trẻ em từ 1-15 tuổi. Midu Magie Citizen là dòng sản phẩm Magie hữu cơ chất lượng cao đồng hành cùng giấc ngủ vàng của con bạn.</p>
+                    <p style="font-size: 0.8rem; opacity: 0.7; margin-top: 1.5rem;">* Sản phẩm này không phải là thuốc, không có tác dụng thay thế thuốc chữa bệnh. Đọc kỹ hướng dẫn sử dụng trước khi dùng.</p>
                 </div>
-                <div>
-                    <h5 class="footer-title">Liên Kết Nhanh</h5>
+                
+                <div class="footer-col">
+                    <h4>Đường Dẫn Nhanh</h4>
                     <ul class="footer-links">
-                        <li><a href="#paradox">Nghịch lý Canxi</a></li>
-                        <li><a href="#solution">Giải pháp K2 Na Uy</a></li>
-                        <li><a href="#audience">Đối tượng sử dụng</a></li>
-                        <li><a href="#ingredients">Bảng thành phần</a></li>
-                        <li><a href="#pricing">Báo giá combo</a></li>
+                        <li><a href="#lo-ngai">Nỗi lo của mẹ</a></li>
+                        <li><a href="#khoa-hoc">Cơ chế khoa học</a></li>
+                        <li><a href="#khac-biet">Sự khác biệt Midu</a></li>
+                        <li><a href="#duoc-si-thieu">Dược sĩ Đồng Thêu</a></li>
+                        <li><a href="#dat-mua">Chính sách ưu đãi</a></li>
                     </ul>
                 </div>
-                <div>
-                    <h5 class="footer-title">Thông Tin Liên Hệ</h5>
-                    <div class="footer-contact">
-                        <div class="footer-contact-item">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <span>Công ty Cổ phần Dược phẩm Midu Group<br>Phân phối chính hãng tại Việt Nam</span>
-                        </div>
-                        <div class="footer-contact-item">
-                            <i class="fa-solid fa-globe"></i>
-                            <span>midumcg180tot.vercel.app</span>
-                        </div>
-                        <div class="footer-contact-item">
+
+                <div class="footer-col">
+                    <h4>Liên Hệ Chuyên Gia</h4>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fa-solid fa-house-chimney"></i>
+                            <span><strong>Nhà thuốc Dược sĩ Đồng Thêu</strong><br>Hải Phòng, Việt Nam</span>
+                        </li>
+                        <li>
                             <i class="fa-solid fa-phone"></i>
-                            <span>Hotline tư vấn: 1900 2323 (Miễn phí cước)</span>
-                        </div>
-                    </div>
+                            <span>Hotline tư vấn phác đồ: 1900 8686 (Nhánh 2)</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>Email: dongtheu86.duocsi@gmail.com</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-globe"></i>
+                            <span>Website chính thức: magie-citizen-chatluong.vercel.app</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p><strong>Lưu ý:</strong> Sản phẩm này không phải là thuốc, không có tác dụng thay thế thuốc chữa bệnh. Không sử dụng cho người mẫn cảm với bất kỳ thành phần nào của sản phẩm.</p>
-                <p>Hạn sử dụng: 36 tháng kể từ ngày sản xuất. Bảo quản nơi khô ráo, tránh ánh sáng trực tiếp.</p>
+                <div>
+                    © 2026 Midu MenaQ7 Magie Citizen. Thiết kế bởi Bộ não Hop Brain & Dược sĩ Đồng Thêu.
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="#">Điều khoản sử dụng</a>
+                    <a href="#">Chính sách bảo mật</a>
+                </div>
             </div>
         </div>
     </footer>
 
-    <!-- Fixed Sticky CTA for Mobile -->
-    <div class="mobile-sticky-cta">
-        <a href="#order-section" class="btn btn-accent"><i class="fa-solid fa-cart-shopping"></i> ĐẶT MUA NHẬN ƯU ĐÃI NGAY</a>
-    </div>
-
-    <!-- Order Success Modal -->
-    <div class="modal-overlay" id="successModal">
-        <div class="modal-box">
+    <!-- Success Order Modal -->
+    <div class="modal" id="successModal">
+        <div class="modal-card">
             <div class="modal-icon">
                 <i class="fa-solid fa-circle-check"></i>
             </div>
-            <h4 class="modal-title font-heading">Đăng ký thành công!</h4>
+            <h3>ĐĂNG KÝ THÀNH CÔNG!</h3>
             <div class="modal-message" id="modalMessage">
-                Cảm ơn bạn đã lựa chọn Midu MenaQ7 180mcg. Hệ thống đã ghi nhận đơn đăng ký của bạn. Dược sĩ chuyên môn của chúng tôi sẽ liên hệ tư vấn và xác nhận đơn hàng trong vòng 15-30 phút tới.
+                Hệ thống đã ghi nhận đơn đăng ký của bạn. Dược sĩ chuyên môn Đồng Thêu sẽ gọi điện liên hệ qua số điện thoại để xác nhận đơn hàng và tư vấn chi tiết liệu trình cho bé trong vòng 15-30 phút nữa.
             </div>
             <button class="modal-close-btn" onclick="closeModal()">Đóng cửa sổ</button>
         </div>
     </div>
 
-    <!-- Page Scripts -->
+    <!-- Scripts -->
     <script>
         // Smooth header scroll effect
         window.addEventListener('scroll', function() {
@@ -2365,6 +2454,18 @@
                 header.classList.remove('scrolled');
             }
         });
+
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const navbar = document.getElementById('navbar');
+        
+        menuToggle.addEventListener('click', function() {
+            navbar.classList.toggle('active');
+        });
+
+        function closeMenu() {
+            navbar.classList.remove('active');
+        }
 
         // Toggle FAQ Accordion
         function toggleFaq(element) {
@@ -2383,21 +2484,10 @@
         }
 
         // Automatic select package when clicking pricing buttons
-        function selectPackage(packageId) {
-            const select = document.getElementById('packageSelect');
-            if (packageId === 1) {
-                select.value = 'combo1';
-            } else if (packageId === 2) {
-                select.value = 'combo3';
-            } else if (packageId === 3) {
-                select.value = 'combo6';
-            }
-            scrollToOrder();
-        }
-
-        function selectConsultation() {
-            const select = document.getElementById('packageSelect');
-            select.value = 'consult';
+        function selectCombo(comboId) {
+            const select = document.getElementById('comboSelect');
+            select.value = comboId;
+            calculateOrderTotal();
             scrollToOrder();
         }
 
@@ -2406,8 +2496,8 @@
             orderSec.scrollIntoView({ behavior: 'smooth' });
         }
 
-        // Countdown Timer Logic
-        let duration = 2 * 60 * 60; // 2 hours in seconds
+        // Countdown Timer Logic (2 hours)
+        let duration = 2 * 60 * 60; 
         const hoursVal = document.getElementById('hours');
         const minutesVal = document.getElementById('minutes');
         const secondsVal = document.getElementById('seconds');
@@ -2422,7 +2512,7 @@
             secondsVal.textContent = s < 10 ? '0' + s : s;
 
             if (duration <= 0) {
-                duration = 2 * 60 * 60; // Reset to 2 hours when finished
+                duration = 2 * 60 * 60; // Reset
             } else {
                 duration--;
             }
@@ -2430,37 +2520,111 @@
         setInterval(updateTimer, 1000);
         updateTimer();
 
+        // Calculate Order Summary dynamically
+        function calculateOrderTotal() {
+            const select = document.getElementById('comboSelect');
+            const selectedVal = select.value;
+            
+            const summaryName = document.getElementById('summaryComboName');
+            const summaryBase = document.getElementById('summaryComboBasePrice');
+            const summaryShipping = document.getElementById('summaryShippingPrice');
+            const summaryDiscount = document.getElementById('summaryDiscountPrice');
+            const summaryTotal = document.getElementById('summaryTotalPrice');
+            const addressInput = document.getElementById('address');
+            
+            const giftsBox = document.getElementById('giftsBox');
+            const giftsContent = document.getElementById('giftsContent');
+            
+            if (selectedVal === 'combo1') {
+                summaryName.textContent = "Combo 1 Hộp Trải Nghiệm";
+                summaryBase.textContent = "225.000đ";
+                summaryShipping.textContent = "30.000đ";
+                summaryDiscount.textContent = "0đ";
+                summaryTotal.textContent = "255.000đ";
+                addressInput.required = true;
+                
+                giftsBox.style.display = "block";
+                giftsContent.innerHTML = "✓ Liệu trình dùng thử chất lượng.<br>✓ Dược sĩ Đồng Thêu tư vấn đồng hành suốt chu kỳ sử dụng.";
+            } else if (selectedVal === 'combo2') {
+                summaryName.textContent = "Combo 2 Hộp Ngủ Ngon Sâu Giấc";
+                summaryBase.textContent = "450.000đ";
+                summaryShipping.textContent = "Miễn phí";
+                summaryDiscount.textContent = "-30.000đ (Giao hàng)";
+                summaryTotal.textContent = "450.000đ";
+                addressInput.required = true;
+                
+                giftsBox.style.display = "block";
+                giftsContent.innerHTML = "✓ Miễn phí giao hàng toàn quốc.<br>✓ Tặng cẩm nang 'Phác đồ 6 bước tăng chiều cao chuẩn khoa học của DS Đồng Thêu'.<br>✓ Hỗ trợ theo dõi phác đồ định kỳ trực tiếp từ Dược sĩ Đồng Thêu.";
+            } else if (selectedVal === 'combo3') {
+                summaryName.textContent = "Combo 4 Hộp Bứt Phá Chiều Cao";
+                summaryBase.textContent = "900.000đ";
+                summaryShipping.textContent = "Miễn phí";
+                summaryDiscount.textContent = "-110.000đ (Ưu đãi + Ship)";
+                summaryTotal.textContent = "850.000đ";
+                addressInput.required = true;
+                
+                giftsBox.style.display = "block";
+                giftsContent.innerHTML = "✓ Tiết kiệm thêm 50.000đ tiền mặt.<br>✓ Miễn phí giao hàng toàn quốc.<br>✓ Tặng cẩm nang dinh dưỡng cao cấp của DS Đồng Thêu.<br>✓ Tặng 1 Thước đo chiều cao Midu cao cấp cho bé.";
+            } else if (selectedVal === 'consult') {
+                summaryName.textContent = "Đăng ký Nhận Tư Vấn Miễn Phí";
+                summaryBase.textContent = "0đ";
+                summaryShipping.textContent = "0đ";
+                summaryDiscount.textContent = "0đ";
+                summaryTotal.textContent = "0đ (MIỄN PHÍ)";
+                addressInput.required = false;
+                
+                giftsBox.style.display = "block";
+                giftsContent.innerHTML = "✓ Cuộc gọi tư vấn trực tiếp từ Dược sĩ Đồng Thêu.<br>✓ Phân tích miễn phí biểu đồ tăng trưởng của bé.<br>✓ Thiết lập phác đồ dinh dưỡng riêng biệt theo lứa tuổi.";
+            }
+        }
+        
+        // Run calculation once at startup
+        calculateOrderTotal();
+
         // Handle Order Form Submit
         function handleOrderSubmit(event) {
             event.preventDefault();
             
             const fullName = document.getElementById('fullName').value.trim();
             const phoneNumber = document.getElementById('phoneNumber').value.trim();
-            const packageSelected = document.getElementById('packageSelect');
-            const packageName = packageSelected.options[packageSelected.selectedIndex].text;
+            const comboSelect = document.getElementById('comboSelect');
+            const comboText = comboSelect.options[comboSelect.selectedIndex].text;
             const address = document.getElementById('address').value.trim();
             const notes = document.getElementById('notes').value.trim();
 
             // Simple Phone Validation (Vietnamese phone number: 10 digits starting with 0 or +84)
             const phoneRegex = /^(0|\+84)[3|5|7|8|9][0-9]{8}$/;
             if (!phoneRegex.test(phoneNumber.replace(/\s/g, ''))) {
-                alert('Vui lòng nhập số điện thoại Việt Nam hợp lệ (ví dụ: 0987654321)!');
+                alert('Vui lòng nhập số điện thoại hợp lệ (ví dụ: 0987654321)!');
                 return;
             }
 
             // Customize message in modal
             const modalMessage = document.getElementById('modalMessage');
-            if (packageSelected.value === 'consult') {
-                modalMessage.innerHTML = `Chào <strong>${fullName}</strong>, hệ thống đã lưu thông tin đăng ký tư vấn của bạn.<br><br>Dược sĩ chuyên môn của Midu MenaQ7 sẽ gọi cho bạn qua số điện thoại <strong>${phoneNumber}</strong> trong thời gian sớm nhất để kiểm tra miễn phí phác đồ chiều cao cho bé!`;
+            if (comboSelect.value === 'consult') {
+                modalMessage.innerHTML = `Chào <strong>${fullName}</strong>, hệ thống đã lưu thông tin đăng ký tư vấn của bạn.<br><br>Dược sĩ chuyên môn <strong>Đồng Thêu</strong> sẽ gọi điện trực tiếp qua số <strong>${phoneNumber}</strong> trong thời gian sớm nhất (trong vòng 15-30 phút) để kiểm tra miễn phí phác đồ chiều cao cho bé!`;
             } else {
-                modalMessage.innerHTML = `Chúc mừng <strong>${fullName}</strong> đã đặt mua thành công <strong>${packageName}</strong>!<br><br>Đơn hàng sẽ được gửi đến địa chỉ: <em>${address}</em>.<br>Dược sĩ chuyên xác nhận sẽ gọi điện thoại qua số <strong>${phoneNumber}</strong> trong 15-30 phút nữa để hoàn tất thủ tục và hướng dẫn chi tiết liệu trình uống cho bé. Cảm ơn bạn!`;
+                modalMessage.innerHTML = `Chúc mừng <strong>${fullName}</strong> đã đăng ký đặt mua thành công <strong>${comboText}</strong>!<br><br>Đơn hàng sẽ được đóng gói cẩn thận và gửi đến địa chỉ: <em>${address || 'Vui lòng cung cấp cho Dược sĩ khi nhận điện thoại xác nhận'}</em>.<br><br>Dược sĩ Đồng Thêu sẽ gọi điện thoại qua số <strong>${phoneNumber}</strong> trong 15-30 phút nữa để xác nhận đơn hàng, hướng dẫn chi tiết liệu trình uống và phác đồ đi kèm. Xin chân thành cảm ơn phụ huynh!`;
             }
 
             // Show success modal
             document.getElementById('successModal').classList.add('active');
             
+            // Save order locally for user context (demonstrates working order capture)
+            const orders = JSON.parse(localStorage.getItem('magie_citizen_orders') || '[]');
+            orders.push({
+                fullName,
+                phoneNumber,
+                combo: comboSelect.value,
+                address,
+                notes,
+                date: new Date().toISOString()
+            });
+            localStorage.setItem('magie_citizen_orders', JSON.stringify(orders));
+            
             // Reset form
             document.getElementById('orderForm').reset();
+            calculateOrderTotal();
         }
 
         function closeModal() {
