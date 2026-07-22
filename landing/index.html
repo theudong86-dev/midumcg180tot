@@ -1716,6 +1716,10 @@
             }
         });
 
+        // Cấu hình URL Web App của Google Sheets (Apps Script)
+        // Dán URL Web App của chị nhận từ Google Sheet vào đây để lưu dữ liệu đặt hàng tự động
+        const GOOGLE_SHEET_URL = ''; 
+
         // Quantity Selector and Dynamic Subtotal Calculation
         const pricePerBox = 420000;
         const qtyInput = document.getElementById('quantity');
@@ -1759,14 +1763,57 @@
             const modalMessage = document.getElementById('modalMessage');
             modalMessage.innerHTML = `Chúc mừng <strong>${customerName}</strong> đã đặt mua thành công <strong>${qty} hộp Midu MenaQ7 180mcg</strong>!<br><br>Tổng tiền thanh toán: <strong>${subtotal.toLocaleString('vi-VN')}₫</strong> (Miễn phí giao hàng).<br>Đơn hàng sẽ được chuyển tới: <em>${address}</em>.<br><br>Dược sĩ <strong>Đồng Thêu</strong> sẽ liên hệ xác nhận đơn hàng qua số <strong>${phone}</strong> trong 15-30 phút nữa để hoàn tất thủ tục và tư vấn phác đồ cho con. Cảm ơn phụ huynh!`;
 
-            // Open modal
-            document.getElementById('successModal').classList.add('active');
+            // Gửi dữ liệu lên Google Sheet nếu đã cấu hình URL
+            if (GOOGLE_SHEET_URL) {
+                const submitBtn = document.querySelector('.btn-submit-order');
+                const originalBtnText = submitBtn.innerHTML;
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Đang gửi...';
 
-            // Reset form
-            document.getElementById('orderForm').reset();
-            qtyInput.value = 1;
-            updateSubtotal();
-        }
+                // Lấy ghi chú
+                const note = document.getElementById('note').value.trim();
+
+                // Chuẩn bị FormData để tránh lỗi CORS khi gửi no-cors
+                const formData = new FormData();
+                formData.append('customerName', customerName);
+                formData.append('phone', phone);
+                formData.append('address', address);
+                formData.append('quantity', qty);
+                formData.append('total', subtotal.toLocaleString('vi-VN') + '₫');
+                formData.append('note', note);
+
+                fetch(GOOGLE_SHEET_URL, {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    body: formData
+                })
+                .then(() => {
+                    // Mở modal thành công
+                    document.getElementById('successModal').classList.add('active');
+                    // Reset form
+                    document.getElementById('orderForm').reset();
+                    qtyInput.value = 1;
+                    updateSubtotal();
+                })
+                .catch(err => {
+                    console.error('Lỗi khi gửi lên Google Sheets:', err);
+                    // Vẫn hiển thị modal thành công để không làm gián đoạn trải nghiệm của phụ huynh
+                    document.getElementById('successModal').classList.add('active');
+                    document.getElementById('orderForm').reset();
+                    qtyInput.value = 1;
+                    updateSubtotal();
+                })
+                .finally(() => {
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = originalBtnText;
+                });
+            } else {
+                // Nếu chưa cấu hình Sheets, chỉ hiện modal thành công bình thường
+                document.getElementById('successModal').classList.add('active');
+                document.getElementById('orderForm').reset();
+                qtyInput.value = 1;
+                updateSubtotal();
+            }
 
         function closeModal() {
             document.getElementById('successModal').classList.remove('active');
